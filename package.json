@@ -2,7 +2,7 @@
   "name": "made",
   "version": "1.0.0",
   "description": "",
-  "main": "",
+  "main": "app.js",
   "scripts": {
     "build": "NODE_ENV=production webpack",
     "watch": "NODE_ENV=development webpack-dev-server"
