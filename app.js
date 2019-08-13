@@ -1,6 +1,5 @@
-import './src/normalize.scss';
-import './src/main.scss';
-import './src/button.scss';
-import './src/application.scss';
+import './src/scss/normalize.scss';
+import './src/scss/app.scss';
+require.context('./src/scss', false, /\.scss$/);
 
-import './src/index.js';
+require.context('./src/js', false, /\.js$/);

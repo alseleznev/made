@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: UbuntuItalic;
+    src: url(../fonts/Ubuntu-MediumItalic.ttf);
+}
+
+html {
+    font-size: 20px;
+}
+
+#hide,
+#hide-small {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    white-space: pre;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+body > section {
+    padding: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .section-2__title {
+        font-size: 2rem;
+    }
+
+    .section-3__title {
+        font-size: 2rem;
+    }
+
+    .section-4__title {
+        font-size: 2rem;
+    }
+
+    .section-5__title {
+        font-size: 2rem;
+    }
+
+    .section-6__title {
+        font-size: 2rem;
+    }
+
+    .section-7__title {
+        font-size: 1.5rem;
+    }
+
+    .section-8__title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .section-2__title {
+        font-size: 2.8rem;
+    }
+
+    .section-3__title {
+        font-size: 2.8rem;
+    }
+
+    .section-4__title {
+        font-size: 2.8em;
+    }
+
+    .section-5__title {
+        font-size: 2.8rem;
+    }
+
+    .section-6__title {
+        font-size: 2.8rem;
+    }
+
+    .section-7__title {
+        font-size: 2.8rem;
+    }
+
+    .section-8__title {
+        font-size: 2.8rem;
+    }
+}
+
+
+
+
+
+
+
+

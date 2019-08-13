@@ -1,0 +1,72 @@
+.section-6 {
+    background-image: linear-gradient(131deg, #5b595b, #5b5762);
+    color: #ffffff;
+    text-align: center;
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    &__comment {
+        font-family: Arial, sans-serif;
+        font-size: .75rem;
+        line-height: 1.31;
+    }
+
+    &__carousel {
+        margin-top: 1.75rem;
+    }
+
+    &__carousel-item {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    &__carousel-item-bubble {
+        background-image: linear-gradient(to bottom, #6cb5ff, #3999f8);
+        border-radius: 5rem;
+        box-shadow: 0 .3rem .7rem 0 rgba(0, 0, 0, 0.19);
+        box-sizing: border-box;
+        display: flex;
+        text-align: left;
+        min-width: 10rem;
+        min-height: 10rem;
+        max-width: 30rem;
+        overflow: hidden;
+        padding: 2rem 4rem;
+    }
+
+    &__carousel-item-person {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        padding: 0 1.5rem 0 .5rem;
+
+    }
+
+    &__carousel-avatar {
+        background: url(../i/founder.png) no-repeat;
+        background-size: contain;
+        height: 3.5rem;
+        width: 3.5rem;
+        display: inline-block;
+    }
+
+    &__carousel-item-legend {
+        color: #bebebe;
+        display: inline-block;
+        font-size: .9rem;
+        font-family: Arial, sans-serif;
+        line-height: 1.28;
+        padding-left: .5rem;
+        text-align: left;
+    }
+
+    &__carousel-item-logo {
+        background: url(../i/firm_logo_1.png) no-repeat;
+        background-size: contain;
+        min-width: 3.5rem;
+        height: 3.5rem;
+    }
+}

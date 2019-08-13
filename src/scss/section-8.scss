@@ -1,0 +1,40 @@
+.section-8 {
+    background-color: #ee5454;
+    color: #fff;
+    text-align: center;
+
+    &__title {
+        font-weight: 500;
+        line-height: 1.18;
+    }
+
+    &__sub-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__tariffs {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__tariffs-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 1.5rem;
+    }
+
+    &__tariffs-item-comment {
+        line-height: 1.35;
+        text-align: left;
+    }
+
+    &__tariffs-item-comment > ul {
+        padding-inline-start: 0;
+    }
+
+    &__tariffs-item-comment > ul > li {
+        margin: 1rem 0 1rem 0;
+    }
+}

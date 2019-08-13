@@ -1,0 +1,33 @@
+.section-5 {
+    background-image: linear-gradient(to bottom, #e8eef6, #eefdff);
+    text-align: center;
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 1.75rem;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        margin: 4rem 0;
+    }
+
+    &__info-item {
+        margin: 0 1rem;
+    }
+
+    &__info-item-title {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    &__info-item-comment {
+        font-size: .75rem;
+    }
+
+    &__info-item-comment > a:hover {
+        color: #ee5454;
+    }
+}

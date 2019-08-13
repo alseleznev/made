@@ -1,0 +1,91 @@
+.section-3 {
+    align-items: center;
+    background-color: #f6f5ea;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__comment {
+        font-family: Arial, sans-serif;
+        margin-bottom: 2.5rem;
+    }
+
+    &__carousel {
+        height: 25rem;
+        position: relative;
+        width: 25rem;
+    }
+
+    &__carousel-arrow {
+        background: url(../i/arrow-gray.svg) no-repeat center;
+        cursor: pointer;
+        height: 3rem;
+        position: absolute;
+        width: 1.5rem;
+        top: calc(50% - 1.5rem);
+
+        &:hover {
+            background: url(../i/arrow-red.svg) no-repeat center;
+        }
+
+        &_right {
+            right: -3rem;
+        }
+
+        &_left {
+            left: -3rem;
+            transform: rotate(180deg);
+        }
+    }
+
+    &__carousel-divider {
+        border: solid 1px #b6ccdd;
+        margin: 2rem 0;
+        width: 25rem;
+    }
+
+    &__carousel-content-wrap {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__carousel-content {
+        display: flex;
+    }
+
+    &__carousel-item {
+        box-sizing: border-box;
+        color: #969696;
+        font-family: Arial, sans-serif;
+        font-size: .6rem;
+        height: 12rem;
+        line-height: 2.5rem;
+        margin: .2rem;
+        padding: 1rem;
+        text-align: center;
+        width: 12rem;
+    }
+
+    &__carousel-item-logo {
+        background-size: contain;
+        display: block;
+        height: 80%;
+        object-fit: contain;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__carousel-item-text {
+        &:hover {
+            color: #ee5454;
+            cursor: pointer;
+        }
+    }
+}
