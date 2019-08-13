@@ -1,33 +1,29 @@
 {
-  "name": "made-web-site",
+  "name": "made",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "start": "http-server"
+    "build": "NODE_ENV=production webpack",
+    "watch": "NODE_ENV=development webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oleLebed/oleLebed.github.io.git"
-  },
-  "author": "oleLebed",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oleLebed/oleLebed.github.io/issues"
-  },
-  "homepage": "https://github.com/oleLebed/oleLebed.github.io#readme",
   "devDependencies": {
-    "css-loader": "^3.1.0",
-    "file-loader": "^4.1.0",
-    "http-server": "^0.11.1",
-    "image-webpack-loader": "^5.0.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.38.0",
-    "webpack-cli": "^3.3.6"
+    "autoprefixer": "9.6.1",
+    "css-loader": "3.2.0",
+    "cssnano": "4.1.10",
+    "file-loader": "4.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "5.0.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "postcss-extend": "1.0.5",
+    "postcss-hexrgba": "1.0.2",
+    "postcss-import": "12.0.1",
+    "postcss-loader": "3.0.0",
+    "postcss-nested": "4.1.2",
+    "style-loader": "1.0.0",
+    "webpack": "4.39.2",
+    "webpack-cli": "3.3.6",
+    "webpack-dev-server": "3.8.0"
   },
   "dependencies": {}
 }

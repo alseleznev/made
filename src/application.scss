@@ -8,7 +8,7 @@
     position: relative;
 
     &__close-icon {
-        background: url(../img/close-icon.svg) no-repeat center;
+        background: url(i/close-icon.svg) no-repeat center;
         height: 1.75rem;
         margin: 1rem 1rem 0 0;
         position: absolute;
@@ -17,7 +17,7 @@
         width: 1.75rem;
 
         &:hover {
-            background-image: url(../img/close-icon_hover.svg);
+            background-image: url(i/close-icon_hover.svg);
         }
     }
 

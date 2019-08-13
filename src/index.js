@@ -1,8 +1,3 @@
-import './normalize.scss';
-import './main.scss';
-import './button.scss';
-import './application.scss';
-
 const inputArr = Array.from(document.getElementsByClassName('input-resize-js'));
 const hide = document.getElementById('hide');
 const hideSmall = document.getElementById('hide-small');

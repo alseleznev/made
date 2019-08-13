@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: Ubuntu;
-    src: url(../fonts/Ubuntu-Medium.ttf);
+    src: url(fonts/Ubuntu-Medium.ttf);
 }
 
 @font-face {
     font-family: UbuntuItalic;
-    src: url(../fonts/Ubuntu-MediumItalic.ttf);
+    src: url(fonts/Ubuntu-MediumItalic.ttf);
 }
 
 html {
@@ -107,7 +107,7 @@ body > section {
     }
 
     &__logo {
-        background: url(../img/logo.svg) no-repeat center;
+        background: url(i/logo.svg) no-repeat center;
         height: 2rem;
         margin-bottom: 4.5rem;
         width: 6rem;
@@ -192,7 +192,6 @@ body > section {
         visibility: visible;
     }
 
-    // применяем стили button_disabled
     .button.button_white {
         background: #fff;
         cursor: auto;
@@ -252,7 +251,7 @@ body > section {
     }
 
     &__carousel-arrow {
-        background: url(../img/arrow-gray.svg) no-repeat center;
+        background: url(i/arrow-gray.svg) no-repeat center;
         cursor: pointer;
         height: 3rem;
         position: absolute;
@@ -260,7 +259,7 @@ body > section {
         top: calc(50% - 1.5rem);
 
         &:hover {
-            background: url(../img/arrow-red.svg) no-repeat center;
+            background: url(i/arrow-red.svg) no-repeat center;
         }
 
         &_right {
@@ -399,7 +398,7 @@ body > section {
     }
 
     &__info-item-comment > a:hover {
-            color: #ee5454;
+        color: #ee5454;
     }
 }
 
@@ -451,7 +450,7 @@ body > section {
     }
 
     &__carousel-avatar {
-        background: url(../img/founder.png) no-repeat;
+        background: url(i/founder.png) no-repeat;
         background-size: contain;
         height: 3.5rem;
         width: 3.5rem;
@@ -469,7 +468,7 @@ body > section {
     }
 
     &__carousel-item-logo {
-        background: url(../img/firm_logo_1.png) no-repeat;
+        background: url(i/firm_logo_1.png) no-repeat;
         background-size: contain;
         min-width: 3.5rem;
         height: 3.5rem;
@@ -552,16 +551,15 @@ body > section {
         visibility: visible;
     }
 
-    // применяем стили button_disabled
     .button.button_blue {
         background-color: rgba(255, 255, 255, 0.2);
         color: rgba(255, 255, 255, 0.45);
         cursor: auto;
 
-    &:hover {
-        box-shadow: none;
+        &:hover {
+            box-shadow: none;
+        }
     }
-  }
 }
 
 .section-8 {
@@ -613,7 +611,7 @@ body > section {
     text-align: center;
 
     &__logo {
-        background: url(../img/logo.svg) no-repeat center;
+        background: url(i/logo.svg) no-repeat center;
         margin: 0 auto;
         min-height: 2rem;
         min-width: 6rem;

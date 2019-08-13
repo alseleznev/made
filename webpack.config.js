@@ -1,14 +1,59 @@
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const {
+    NODE_ENV,
+} = process.env;
+const IS_DEVELOPMENT = NODE_ENV !== 'production';
+const ROOT = path.join(__dirname, 'dist');
+
 module.exports = {
+    entry: {
+        client: './app.js',
+    },
+    mode: NODE_ENV,
+    output: {
+        path: ROOT,
+        publicPath: '',
+    },
     devtool: 'source-map',
+    optimization: {
+        noEmitOnErrors: false,
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            allChunks: true,
+        }),
+        new HtmlWebpackPlugin({
+            template: './index.html',
+        }),
+    ],
+    devServer: {
+        contentBase: ROOT,
+        compress: true,
+        port: 3000,
+    },
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.s?css$/,
                 use: [
-                    "style-loader",
-                    "css-loader",
-                    "sass-loader"
-                ]
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            sourceMap: !IS_DEVELOPMENT,
+                        },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                    },
+                ],
             },
             {
                 test: /\.(gif|png|jpe?g|svg)$/i,
