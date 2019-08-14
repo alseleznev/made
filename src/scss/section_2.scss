@@ -1,4 +1,9 @@
 .section_2 {
+    &__header {
+        .heading:first-child {
+            margin-bottom: 50px;
+        }
+    }
     &__info {
         margin-bottom: 2rem;
     }
