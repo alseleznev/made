@@ -1,10 +1,10 @@
-.section-6 {
+.section.section_6 {
     background-image: linear-gradient(131deg, #5b595b, #5b5762);
-    color: #ffffff;
-    text-align: center;
+    color: #fff;
+}
 
-    &__title {
-        font-weight: 500;
+.section_6 {
+    &__heading {
         margin-bottom: 1rem;
     }
 

@@ -1,16 +1,13 @@
-.section-1 {
+.section.section_1 {
     align-items: center;
     background-color: #ee5454;
     color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
-    text-align: center;
+}
 
-    &__title {
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 1.22;
+.section_1 {
+    &__heading {
         margin-bottom: 9rem;
     }
 
@@ -91,12 +88,12 @@
     }
 }
 
-.section-1__form.section-1__form_error {
-    .section-1__form-input {
+.section_1__form.section_1__form_error {
+    .section_1__form-input {
         border-bottom: solid 2px #fff8a3;
     }
 
-    .section-1__message {
+    .section_1__message {
         visibility: visible;
     }
 

@@ -1,10 +1,10 @@
-.section-8 {
+.section.section_8 {
     background-color: #ee5454;
     color: #fff;
-    text-align: center;
+}
 
-    &__title {
-        font-weight: 500;
+.section_8 {
+    &__heading {
         line-height: 1.18;
     }
 

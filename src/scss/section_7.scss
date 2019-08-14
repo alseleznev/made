@@ -1,10 +1,10 @@
-.section-7 {
+.section.section_7 {
     background-color: #3c3743;
     color: #fff;
-    text-align: center;
+}
 
-    &__title {
-        font-weight: 500;
+.section_7 {
+    &__heading {
         line-height: 1.18;
     }
 
@@ -60,17 +60,17 @@
     }
 }
 
-.section-7__form.section-7__form_error {
-    .section-7__form-input {
+.section_7__form.section_7__form_error {
+    .section_7__form-input {
         border-bottom: solid 2px #ee5454;
         color: #ee5454;
     }
 
-    .section-7__form-input-wrap {
+    .section_7__form-input-wrap {
         color: #ee5454;
     }
 
-    .section-7__message {
+    .section_7__message {
         visibility: visible;
     }
 

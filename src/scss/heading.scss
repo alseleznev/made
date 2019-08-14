@@ -1,0 +1,28 @@
+.heading {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.18;
+}
+
+.heading.heading_red {
+    color: #ee5454;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .heading {
+        font-size: 2.8rem;
+    }
+}
+
+
+
+
+
+
+

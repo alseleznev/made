@@ -1,9 +1,10 @@
-.section-5 {
+.section.section_5 {
     background-image: linear-gradient(to bottom, #e8eef6, #eefdff);
-    text-align: center;
+}
 
-    &__title {
-        font-weight: 500;
+.section_5 {
+
+    &__heading {
         margin-bottom: 1.75rem;
     }
 

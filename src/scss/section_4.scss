@@ -1,11 +1,11 @@
-.section-4 {
+.section.section_4 {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
 
-    &__title {
-        color: #ee5454;
-        font-weight: 500;
+.section_4 {
+    &__heading {
         margin-bottom: 4rem;
         text-align: center;
     }
