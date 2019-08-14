@@ -1,14 +1,45 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    font-style: italic;
+    src: url(../fonts/Ubuntu-MediumItalic.ttf);
+}
+
 .heading {
-    font-size: 2rem;
+    font-family: Ubuntu, sans-serif;
     font-weight: 500;
+}
+
+.heading_2 {
+    font-size: 56px;
     line-height: 1.18;
 }
 
-.heading.heading_red {
+.heading_3 {
+    font-size: 46px;
+    line-height: 1.22;
+}
+
+.heading_4 {
+    font-size: 32px;
+    line-height: 1.16;
+}
+
+.heading_italic {
+    font-style: italic;
+}
+
+.heading_red {
     color: #ee5454;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .heading {
         font-size: 2rem;
     }
@@ -18,7 +49,7 @@
     .heading {
         font-size: 2.8rem;
     }
-}
+}*/
 
 
 
