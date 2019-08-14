@@ -1,15 +1,12 @@
-.footer {
+.section.section_footer {
     background-color: #ee5454;
     color: #fff;
     font-size: .9rem;
-    padding-bottom: 1.5rem;
-    text-align: center;
+}
 
-    &__logo {
-        background: url(../i/logo.svg) no-repeat center;
-        margin: 0 auto;
-        min-height: 2rem;
-        min-width: 6rem;
+.section_footer {
+    &__inner {
+        padding: 40px;
     }
 
     &__info {

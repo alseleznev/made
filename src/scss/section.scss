@@ -1,4 +1,10 @@
 .section {
-    padding: 40px;
-    text-align: center;
+    &__inner {
+        max-width: 1024px;
+        padding: 75px 40px 85px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }

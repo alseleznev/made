@@ -1,8 +1,6 @@
 .section.section_1 {
-    align-items: center;
     background-color: #ee5454;
     color: #fff;
-    display: flex;
     flex-direction: column;
 }
 
@@ -11,11 +9,8 @@
         margin-bottom: 9rem;
     }
 
-    &__logo {
-        background: url(../i/logo.svg) no-repeat center;
-        height: 2rem;
-        margin-bottom: 4.5rem;
-        width: 6rem;
+    .logo {
+        margin-bottom: 70px;
     }
 
     &__form {
@@ -53,14 +48,13 @@
         text-align: left;
     }
 
+    &__form-interactive {
+        margin-bottom: 40px;
+    }
+
     &__form-contacts {
         display: inline-block;
         margin-bottom: 2.5rem;
-    }
-
-    &__info {
-        padding-top: 2rem;
-        text-align: center;
     }
 
     &__info-item {
