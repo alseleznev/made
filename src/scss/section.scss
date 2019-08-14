@@ -1,4 +1,8 @@
 .section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
     &__inner {
         max-width: 1024px;
         padding: 75px 40px 85px;
