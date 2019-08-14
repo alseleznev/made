@@ -9,7 +9,7 @@
         margin-bottom: 9rem;
     }
 
-    .logo {
+    &__logo {
         margin-bottom: 70px;
     }
 
@@ -42,8 +42,6 @@
 
     &__form-input-prefix {
         color: #eeb0ae;
-        font-size: 1rem;
-        line-height: 1.5;
         text-align: left;
     }
 
@@ -52,32 +50,37 @@
     }
 
     &__form-contacts {
+        font-style: italic;
+        font-family: Ubuntu, sans-serif;
         display: inline-block;
         margin-bottom: 2.5rem;
     }
 
-    &__info-item {
-        color: #ffcece;
-        display: inline-block;
-        font-family: Arial, sans-serif;
-        margin: .75rem 1.5rem;
-    }
-
-    &__info-main {
-        font-size: 1.65rem;
-        font-weight: bold;
-    }
-
-    &__info-comment {
-        font-size: .75rem;
-    }
-
-    &__message {
+    &__form-message {
         color: #fff8a3;
         font-family: Arial, sans-serif;
         font-size: .75rem;
         line-height: 2.5rem;
         visibility: hidden;
+    }
+
+    &__stat {
+        display: flex;
+    }
+
+    &__stat-item {
+        color: #ffcece;
+        margin: 0 50px;
+    }
+
+    &__stat-item-title {
+        font-size: 33px;
+        font-weight: bold;
+    }
+
+    &__stat-item-comment {
+        font-size: 15px;
+        line-height: 1.4;
     }
 }
 

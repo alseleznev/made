@@ -27,6 +27,7 @@ module.exports = {
             allChunks: true,
         }),
         new HtmlWebpackPlugin({
+            inject: 'head',
             template: './src/index.html',
         }),
     ],

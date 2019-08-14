@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
     <title>MADE</title>
 </head>
 <body>
     <section class="section section_1">
         <div class="section__inner">
-            <div class="logo"></div>
+            <div class="section_1__logo logo"></div>
             <div class="js-form-wrapper">
                 <!-- section_1__form_error -->
                 <form class="section_1__form js-form" onsubmit="return false;">
                     <div class="section_1__form-interactive heading heading_3">
                         <p>
                             Я
-                            <span id="hide"></span>
                             <input
                                 id="input-1"
                                 class="section_1__form-input js-resize-input"
                                 type="text"
+                                name="name"
+                                autofocus
                             />
                         </p>
                         <p>
@@ -31,23 +33,25 @@
                                 id="input-2"
                                 class="section_1__form-input js-resize-input"
                                 type="text"
+                                name="brand"
                             />
-                            » за 999 руб.
+                            » <span class="nowrap">за 999 руб</span>.
                         </p>
                     </div>
                     <div class="section_1__form-contacts">
                         <div class="section_1__form-input-prefix">
                             Мой e-mail
-                            <span id="hide-small"></span>
                             <input
-                                class="section_1__form-input section_1__form-input_mail"
+                                class="section_1__form-input section_1__form-input_mail js-resize-input"
+                                name="email"
                                 type="email"
                             >
                         </div>
                         <div class="section_1__form-input-prefix">
                             Мой телефон
                             <input
-                                class="section_1__form-input section_1__form-input_tel"
+                                class="section_1__form-input section_1__form-input_tel js-resize-input"
+                                name="phone"
                                 type="tel"
                             >
                         </div>
@@ -56,42 +60,42 @@
                     <button class="button button_white" type="submit">
                         Отправить заявку
                     </button>
-                    <div style="display: none" class="section_1__message">
+                    <div style="display: none" class="section_1__form-message">
                         Заполните пожалуйста все поля
                     </div>
                 </form>
-                <div class="js-success" style="display: none">
-                    <div class="heading section_1__heading">
+                <div class="js-success" style="display: none;">
+                    <div class="heading heading_3 section_1__heading">
                         Спасибо!<br><br>
                         Ваша заявка успешно<br>
                         отправлена.
                     </div>
                 </div>
             </div>
-            <div class="section_1__info">
-                <div class="section_1__info-item">
-                    <div class="section_1__info-main">
+            <div class="section_1__stat">
+                <div class="section_1__stat-item">
+                    <div class="section_1__stat-item-title">
                         10
                     </div>
-                    <div class="section_1__info-comment">
+                    <div class="section_1__stat-item-comment">
                         <strong>лет работы</strong><br>
                         в дизайне
                     </div>
                 </div>
-                <div class="section_1__info-item">
-                    <div class="section_1__info-main">
-                        > 100
+                <div class="section_1__stat-item">
+                    <div class="section_1__stat-item-title">
+                        >100
                     </div>
-                    <div class="section_1__info-comment">
+                    <div class="section_1__stat-item-comment">
                         <strong>логотипов</strong><br>
                         вышло из наших рук
                     </div>
                 </div>
-                <div class="section_1__info-item">
-                    <div class="section_1__info-main">
+                <div class="section_1__stat-item">
+                    <div class="section_1__stat-item-title">
                         в 2 раза
                     </div>
-                    <div class="section_1__info-comment">
+                    <div class="section_1__stat-item-comment">
                         <strong>увеличилась прибыль</strong><br>
                         у 85% наших клиентов
                     </div>
@@ -338,32 +342,30 @@
                 <div class="section_7__form">
                     <label class="section_7__form-input-label">
                         <input
-                                class="section_7__form-input section_7__form-input_url"
-                                type="email"
+                            class="section_7__form-input section_7__form-input_url"
+                            type="email"
                         >
                         <br>
                         Ссылка на страницу с лого
                     </label>
                     <label class="section_7__form-input-label">
                         <input
-                                class="section_7__form-input section_7__form-input_name"
-                                type="email"
+                            class="section_7__form-input section_7__form-input_name"
+                            type="email"
                         >
                         <br>
                         Ваше имя
                     </label>
                     <label class="section_7__form-input-label">
                         <input
-                                class="section_7__form-input section_7__form-input_mail"
-                                type="email"
+                            class="section_7__form-input section_7__form-input_mail"
+                            type="email"
                         >
                         <br>
                         Ваш Email
                     </label>
                     <div class="section_7__button-wrap">
-                        <button
-                                class="button button_blue"
-                        >
+                        <button class="button button_blue">
                             Отправить и получить консультацию
                         </button>
                     </div>
@@ -390,32 +392,30 @@
                 <div class="section_7__form section_7__form_error">
                     <label class="section_7__form-input-label">
                         <input
-                                class="section_7__form-input section_7__form-input_url"
-                                type="email"
+                            class="section_7__form-input section_7__form-input_url"
+                            type="email"
                         >
                         <br>
                         Ссылка на страницу с лого
                     </label>
                     <label class="section_7__form-input-label">
                         <input
-                                class="section_7__form-input section_7__form-input_name"
-                                type="email"
+                            class="section_7__form-input section_7__form-input_name"
+                            type="email"
                         >
                         <br>
                         Ваше имя
                     </label>
                     <label class="section_7__form-input-label">
                         <input
-                                class="section_7__form-input section_7__form-input_mail"
-                                type="email"
+                            class="section_7__form-input section_7__form-input_mail"
+                            type="email"
                         >
                         <br>
                         Ваш Email
                     </label>
                     <div class="section_7__button-wrap">
-                        <button
-                                class="button button_blue"
-                        >
+                        <button class="button button_blue">
                             Отправить и получить консультацию
                         </button>
                     </div>
@@ -645,13 +645,10 @@
                 Ваша заявка успешно<br>
                 отправлена.<br>
             </div>
-            <button
-                class="button button_blue"
-            >
+            <button class="button button_blue" >
                 Закрыть
             </button>
         </div>
     </div>
-
 </body>
 </html>
