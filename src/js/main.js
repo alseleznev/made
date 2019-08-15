@@ -45,7 +45,30 @@ function slide($el, distance, right) {
     $el.css('transform', `translateX(${right ? '-' : ''}${distance}px)`);
 }
 
+function hasTouch() {
+    return 'ontouchstart' in document.documentElement
+        || navigator.maxTouchPoints > 0
+        || navigator.msMaxTouchPoints > 0;
+}
+
 $(document).ready(() => {
     $('.js-resize-input').each((i, el) => resizeableInput($(el)));
     $('.js-carousel').each((i, el) => carousel($(el)));
+
+    if (hasTouch()) {
+        try {
+            for (var si in document.styleSheets) {
+                var styleSheet = document.styleSheets[si];
+                if (!styleSheet.rules) continue;
+
+                for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                    if (!styleSheet.rules[ri].selectorText) continue;
+
+                    if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                        styleSheet.deleteRule(ri);
+                    }
+                }
+            }
+        } catch (ex) {}
+    }
 });
