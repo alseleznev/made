@@ -1,0 +1,30 @@
+.about-columns {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        margin: 0 40px;
+        flex: 1;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: #4a90e2;
+
+            &:hover {
+                color: #ee5454;
+            }
+        }
+    }
+
+    &__item-title {
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
