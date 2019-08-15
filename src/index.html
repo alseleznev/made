@@ -12,13 +12,13 @@
             <div class="section_1__logo logo"></div>
             <div class="js-form-wrapper">
                 <!-- section_1__form_error -->
-                <form class="section_1__form js-form" onsubmit="return false;">
-                    <div class="section_1__form-interactive heading heading_3">
+                <form class="section_1__form js-form visible" onsubmit="return false;">
+                    <div class="section_1__form-header heading heading_3">
                         <p>
                             Я
                             <input
                                 id="input-1"
-                                class="section_1__form-input js-resize-input"
+                                class="section_1__form-input section_1__form-input_type_name input input_color_red js-resize-input"
                                 type="text"
                                 name="name"
                                 autofocus
@@ -31,7 +31,7 @@
                             бренда «
                             <input
                                 id="input-2"
-                                class="section_1__form-input js-resize-input"
+                                class="section_1__form-input section_1__form-input_type_brand input input_color_red js-resize-input js-input"
                                 type="text"
                                 name="brand"
                             />
@@ -39,37 +39,35 @@
                         </p>
                     </div>
                     <div class="section_1__form-contacts">
-                        <div class="section_1__form-input-prefix">
+                        <div class="section_1__form-contacts-item">
                             Мой e-mail
                             <input
-                                class="section_1__form-input section_1__form-input_mail js-resize-input"
+                                class="section_1__form-input section_1__form-input_type_email input input_color_red js-input"
                                 name="email"
                                 type="email"
                             >
                         </div>
-                        <div class="section_1__form-input-prefix">
+                        <div class="section_1__form-contacts-item">
                             Мой телефон
                             <input
-                                class="section_1__form-input section_1__form-input_tel js-resize-input"
+                                class="section_1__form-input section_1__form-input_type_phone input input_color_red js-input"
                                 name="phone"
                                 type="tel"
                             >
                         </div>
                     </div>
                     <br>
-                    <button class="button button_white" type="submit">
+                    <button class="button button_white js-submit" type="submit">
                         Отправить заявку
                     </button>
-                    <div style="display: none" class="section_1__form-message">
+                    <div class="section_1__form-error-message js-error-message invisible">
                         Заполните пожалуйста все поля
                     </div>
                 </form>
-                <div class="js-success" style="display: none;">
-                    <div class="heading heading_3 section_1__heading">
-                        Спасибо!<br><br>
-                        Ваша заявка успешно<br>
-                        отправлена.
-                    </div>
+                <div class="heading heading_3 section_1__heading js-success hidden">
+                    Спасибо!<br><br>
+                    Ваша заявка успешно<br>
+                    отправлена.
                 </div>
             </div>
             <div class="section_1__stat">

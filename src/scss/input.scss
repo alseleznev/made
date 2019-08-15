@@ -1,0 +1,11 @@
+.input {
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid;
+}
+
+.input.input_color_red {
+    border-bottom-color: #ff7571;
+    color: #fff;
+}

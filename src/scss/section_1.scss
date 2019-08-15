@@ -14,38 +14,30 @@
     }
 
     &__form {
-        margin-bottom: 2.25rem;
+        margin-bottom: 60px;
     }
 
     &__form-input {
-        min-width: 11rem;
-        width: 11rem;
-        background: transparent;
-        border: none;
-        border-bottom: solid 2px #ff7571;
-        color: #fff;
+        font-family: Ubuntu, sans-serif;
+        font-style: italic;
+        max-width: 600px;
 
-        &_mail {
-            min-width: 18rem;
-            width: 18rem;
+        &_type_name {
+            width: 360px;
         }
 
-        &_tel {
-            min-width: 16.6rem;
-            width: 16.6rem;
+        &_type_brand {
+            width: 160px;
+            max-width: 350px;
+        }
+
+        &_type_email,
+        &_type_phone {
+            width: 350px;
         }
     }
 
-    &__form-input:focus {
-        outline: none;
-    }
-
-    &__form-input-prefix {
-        color: #eeb0ae;
-        text-align: left;
-    }
-
-    &__form-interactive {
+    &__form-header {
         margin-bottom: 40px;
     }
 
@@ -56,12 +48,21 @@
         margin-bottom: 2.5rem;
     }
 
-    &__form-message {
+    &__form-contacts-item {
+        color: #eeb0ae;
+        text-align: left;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__form-error-message {
         color: #fff8a3;
-        font-family: Arial, sans-serif;
-        font-size: .75rem;
-        line-height: 2.5rem;
-        visibility: hidden;
+        font-size: 1rem;
+        line-height: 3rem;
+        visibility: visible;
     }
 
     &__stat {
