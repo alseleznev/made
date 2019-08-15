@@ -1,10 +1,8 @@
-.section.section_footer {
+.section_footer {
     background-color: #ee5454;
     color: #fff;
-    font-size: .9rem;
-}
+    font-size: 15px;
 
-.section_footer {
     .section__inner {
         padding: 40px;
     }
@@ -13,14 +11,19 @@
         margin-top: 5rem;
     }
 
-    &__info > span,
-    &__info > a {
+    &__info-item {
+        margin: 0 20px;
         color: #efd4d4;
-        font-size: .6rem;
-        margin: 0 1rem;
+        text-decoration: none;
+        font-size: 13px;
+
+        &[rel="email"] {
+            border-bottom: 1px solid;
+
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 
-    &__info-link:hover {
-        color: #fff;
-    }
 }

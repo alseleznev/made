@@ -5,7 +5,7 @@
 
 .section_8 {
     &__header {
-        line-height: 1.18;
+        margin-bottom: 80px;
     }
 
     &__sub-title {
@@ -19,22 +19,43 @@
     }
 
     &__tariffs-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 1.5rem;
+        padding-bottom: 80px;
+        position: relative;
+
+        .button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__tariffs-item-title {
+        font-weight: bold;
+    }
+
+    &__tariffs-item-price {
+        font-size: 70px;
+    }
+
+    &__tariffs-item-currency {
+        font-size: 30px;
     }
 
     &__tariffs-item-comment {
-        line-height: 1.35;
         text-align: left;
+        margin-bottom: 35px;
     }
 
-    &__tariffs-item-comment > ul {
+    &__tariffs-item-list {
         padding-inline-start: 0;
     }
 
-    &__tariffs-item-comment > ul > li {
-        margin: 1rem 0 1rem 0;
+    &__tariffs-item-list-item {
+        margin-bottom: 35px;
+        text-align: left;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
