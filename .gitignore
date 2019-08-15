@@ -70,6 +70,5 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .DS_Store
-docs/
 node_modules
 package-lock.json

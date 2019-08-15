@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <title>MADE</title>
+<link href="client.css" rel="stylesheet"><script type="text/javascript" src="client.js"></script></head>
+<body>
+    <section class="section section_1">
+        <div class="section__inner">
+            <div class="section_1__logo logo"></div>
+            <div class="section_1__form-wrapper js-form-wrapper">
+                <form class="section_1__form js-form" onsubmit="return false;">
+                    <div class="section_1__form-header heading heading_3">
+                        <p>
+                            Я
+                            <input id="input-1" class="section_1__form-input section_1__form-input_type_name input input_color_red js-resize-input" type="text" name="name" autofocus>
+                        </p>
+                        <p>
+                            хочу заказать эскиз логотипа для своего бренда «
+                            <input id="input-2" class="section_1__form-input section_1__form-input_type_brand input input_color_red js-resize-input js-input" type="text" name="brand">
+                            » за&nbsp;999&nbsp;руб.
+                        </p>
+                    </div>
+                    <div class="section_1__form-contacts">
+                        <div class="section_1__form-contacts-item">
+                            Мой e-mail
+                            <input class="section_1__form-input section_1__form-input_type_email input input_color_red js-input" name="email" type="email">
+                        </div>
+                        <div class="section_1__form-contacts-item">
+                            Мой телефон
+                            <input class="section_1__form-input section_1__form-input_type_phone input input_color_red js-input" name="phone" type="tel">
+                        </div>
+                    </div>
+                    <br>
+                    <button class="button button_white js-submit" type="submit">
+                        Отправить заявку
+                    </button>
+                    <div class="section_1__error-message js-error-message invisible">
+                        Заполните пожалуйста все поля
+                    </div>
+                </form>
+                <div class="section_1__success-message js-success hidden">
+                    <div class="heading heading_3">Спасибо!</div><br>
+                    <div class="heading heading_3">Ваша&nbsp;заявка успешно&nbsp;отправлена.</div>
+                </div>
+            </div>
+            <div class="section_1__stat columns">
+                <div class="section_1__stat-item columns__item">
+                    <div class="section_1__stat-item-title">
+                        10
+                    </div>
+                    <div class="section_1__stat-item-comment">
+                        <strong>лет работы</strong><br>
+                        в дизайне
+                    </div>
+                </div>
+                <div class="section_1__stat-item columns__item">
+                    <div class="section_1__stat-item-title">
+                        >100
+                    </div>
+                    <div class="section_1__stat-item-comment">
+                        <strong>логотипов</strong><br>
+                        вышло из наших рук
+                    </div>
+                </div>
+                <div class="section_1__stat-item columns__item">
+                    <div class="section_1__stat-item-title">
+                        в 2 раза
+                    </div>
+                    <div class="section_1__stat-item-comment">
+                        <strong>увеличилась прибыль</strong><br>
+                        у 85% наших клиентов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_2">
+        <div class="section__inner">
+            <div class="section_2__header">
+                <div class="heading heading_2 heading_italic heading_red">
+                    У&nbsp;вас не&nbsp;будет второго шанса произвести первое впечатление
+                </div>
+                <div class="heading heading_2">
+                    Будьте на&nbsp;два шага впереди
+                </div>
+            </div>
+            <div class="section_2__columns columns">
+                <div class="columns__item">
+                    <div class="columns__item-title">
+                        Логотип&nbsp;&mdash; это первый визуальный контакт с&nbsp;вашим бизнесом
+                    </div>
+                    <div class="columns__item-content">
+                        Он либо нравится, либо нет.<br>
+                        С вами либо работают, либо нет.
+                    </div>
+                </div>
+                <div class="columns__item">
+                    <div class="columns__item-title">
+                        Первоклассный логотип передает историю и&nbsp;дарит смысл
+                    </div>
+                    <div class="columns__item-content">
+                        Позвольте вашим клиентам быть частью вашей красивой истории
+                    </div>
+                </div>
+            </div>
+            <button class="button button_red js-scroll-to-prices">
+                Создать логотип
+            </button>
+        </div>
+    </section>
+    <section class="section section_3">
+        <div class="section__inner">
+            <div class="heading heading_2 section_3__header">
+                Мы знаем секрет
+            </div>
+            <div class="section_3__about about">
+                <div class="about__title">
+                    Крутой логотип создается только из&nbsp;любви к&nbsp;вашему бизнесу.
+                </div>
+                <div class="about__content">
+                    Мы&nbsp;любим свое дело, работаем только с&nbsp;лучшими и&nbsp;выдаем сильный результат. Посмотрите примеры наших работ:
+                </div>
+            </div>
+            <div class="section_3__carousel carousel js-carousel">
+                <div class="carousel__ctrl carousel__ctrl_prev js-ctrl-prev"></div>
+                <div class="carousel__ctrl carousel__ctrl_next js-ctrl-next"></div>
+                <div class="section_3__carousel-wrapper carousel__wrapper js-wrapper">
+                    <div class="section_3__carousel-items carousel__items js-items">
+                        <div class="section_3__carousel-page carousel__item js-item">
+                            <div class="section_3__carousel-item js-open-portfolio" data-work-id="wall">
+                                <img class="section_3__carousel-item-logo" src="portfolio/1_logo_color.png">
+                                <span class="section_3__carousel-item-title">
+                                    Логотип арт-проекта «Стена»
+                                </span>
+                            </div>
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/2_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип Первого<br>Специализированного Депозитария
+                                </span>
+                            </div>
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/3_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип музыкального фестиваля<br>Open Mic Music Russia
+                                </span>
+                            </div>
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/4_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип информационной системы<br>для проектных институтов «Ингипро»
+                                </span>
+                            </div>
+                        </div>
+                        <div class="section_3__carousel-page carousel__item js-item">
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/5_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип конференции Microsoft
+                                </span>
+                            </div>
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/6_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип разработчика<br>информационных систем
+                                </span>
+                            </div>
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/7_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип сервиса<br>умных СМС-рассылок
+                                </span>
+                            </div>
+                            <div class="section_3__carousel-item">
+                                <img class="section_3__carousel-item-logo" src="portfolio/8_logo_color.png">
+                                <span class="section_3__carousel-item-text">
+                                    Логотип модельного агентства
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button button_red js-open-application-modal">
+                Хочу так же
+            </button>
+        </div>
+    </section>
+    <section class="section section_4">
+        <div class="section__inner">
+            <div class="section_4__header heading heading_2 heading_red">
+                Выделитесь среди конкурентов<br>
+                за 3 простых шага
+            </div>
+            <ol class="section_4__list">
+                <li class="section_4__list-item">
+                    <div class="section_4__list-item-title heading heading_4">
+                        Вы оставляете заявку
+                    </div>
+                    <div class="section_4__list-item-comment">
+                        Мы вместе формулируем задачу, собираем информацию.<br>
+                        Слышим ваши пожелания и предпочтения.
+                    </div>
+                </li>
+                <li class="section_4__list-item">
+                    <div class="section_4__list-item-title heading heading_4">
+                        Мы создаем шедевр
+                    </div>
+                    <div class="section_4__list-item-comment">
+                        С арт-директором и группой дизайнеров начинаем<br>
+                        работу. Делаем выше ваших ожиданий и представлений.
+                    </div>
+                </li>
+                <li class="section_4__list-item">
+                    <div class="section_4__list-item-title heading heading_4">
+                        Выводим на новый уровень
+                    </div>
+                    <div class="section_4__list-item-comment">
+                        Вы получаете первоклассный логотип, который начинает<br>
+                        работать на ваш бизнес.
+                    </div>
+                </li>
+            </ol>
+            <button class="button button_red js-open-application-modal">
+                Начать работу
+            </button>
+        </div>
+    </section>
+    <section class="section section_5">
+        <div class="section__inner">
+            <div class="section_5__header heading heading_2">
+                Делаем ставку на репутацию
+            </div>
+            <div class="section_5__about about">
+                <div class="about__title">
+                    И дорожим ею.
+                </div>
+                <div class="about__content">
+                    За спиной нашей команды опыт работы в Студии Лебедева,<br>
+                    RedKeds, FIRMA и международных дизайн-студиях.
+                </div>
+            </div>
+            <div class="section_5__columns columns">
+                <div class="columns__item">
+                    <div class="columns__item-title heading heading_4">
+                        Что это значит для меня?
+                    </div>
+                    <div class="columns__item-content">
+                        У&nbsp;нас нет шанса не&nbsp;выполнить работу или сорвать сроки
+                    </div>
+                </div>
+                <div class="columns__item">
+                    <div class="columns__item-title heading heading_4">
+                        А&nbsp;если мне не&nbsp;понравится?
+                    </div>
+                    <div class="columns__item-content">
+                        Мы&nbsp;просто вернем деньги.<br>Клиенты&nbsp;&mdash; наша высшая ценность
+                    </div>
+                </div>
+                <div class="columns__item">
+                    <div class="columns__item-title heading heading_4">
+                        У меня есть<br>
+                        еще вопросы
+                    </div>
+                    <div class="columns__item-content">
+                        +7 963 968-52-14<br>
+                        <a href="mailto:hello@theymade.com">hello@theymade.com</a>
+                    </div>
+                </div>
+            </div>
+            <button class="button button_red js-open-application-modal">
+                Начать работу
+            </button>
+        </div>
+    </section>
+    <section class="section section_6">
+        <div class="section__inner">
+            <div class="section_6__header heading heading_2">
+                Можно было сразу<br>
+                обратиться к нам
+            </div>
+            <div class="section_6__about about">
+                Упрямая статистика: <strong>каждый второй</strong> наш заказчик приходит<br>
+                с имеющимся логотипом. С логотипом, который<br>
+                плохо выполнен и не решает задачу клиента
+            </div>
+            <div class="section_6__carousel carousel js-carousel">
+                <div class="carousel__ctrl carousel__ctrl_prev js-ctrl-prev"></div>
+                <div class="carousel__ctrl carousel__ctrl_next js-ctrl-next"></div>
+                <div class="section_6__carousel-wrapper carousel__wrapper js-wrapper">
+                    <div class="carousel__items js-items">
+                        <div class="section_6__carousel-item carousel__item js-item">
+                            <div class="section_6__feedback">
+                                <div class="section_6__feedback-bubble">
+                                    <p>Мы предприняли две самостоятельные попытки сделать нужный нам логотип, после чего обратились в MADE. </p>
+                                    <p>С первой попытки мы получили идеальный логотип. Спасибо!</p>
+                                </div>
+                                <div class="section_6__feedback-meta">
+                                    <img class="section_6__feedback-avatar" src="portfolio/5_avatar.png">
+                                    <div class="section_6__feedback-person">
+                                        <div class="section_6__feedback-person-name">
+                                            Петраков Сергей
+                                        </div>
+                                        <div class="section_6__feedback-person-description">
+                                            <a href="#" class="section_6__feedback-company-link">ГАЛС Софт</a>
+                                        </div>
+                                    </div>
+                                    <div class="section_6__feedback-logo">
+                                        <img class="section_6__feedback-logo-pic js-open-portfolio-work" src="portfolio/5_logo_gs.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_6__carousel-item carousel__item js-item">
+                            <div class="section_6__feedback">
+                                <div class="section_6__feedback-bubble">
+                                    <p>Мы провели 8 фестивалей и не имели постоянного логотипа.</p>
+                                    <p>Спасибо, ребятам из MADE за крутое лого, с которым мы провели 9-й фестиваль!</p>
+                                    <p>Выходим на новый уровень!</p>
+                                </div>
+                                <div class="section_6__feedback-meta">
+                                    <img class="section_6__feedback-avatar" src="portfolio/3_avatar.png">
+                                    <div class="section_6__feedback-person">
+                                        <div class="section_6__feedback-person-name">
+                                            Alseyda
+                                        </div>
+                                        <div class="section_6__feedback-person-description">
+                                            Певица и организатор музыкального фестиваля <a href="#" class="section_6__feedback-company-link">Open Mic Music Russia</a>
+                                        </div>
+                                    </div>
+                                    <div class="section_6__feedback-logo">
+                                        <img class="section_6__feedback-logo-pic js-open-portfolio-work" src="portfolio/3_logo_gs.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_6__carousel-item carousel__item js-item">
+                            <div class="section_6__feedback">
+                                <div class="section_6__feedback-bubble">
+                                    <p>
+                                        <span style="font-size: 70px; font-family: Monaco, Arial, sans-serif;">🔥Спасибо</span>
+                                    </p>
+                                </div>
+                                <div class="section_6__feedback-meta">
+                                    <img class="section_6__feedback-avatar" src="portfolio/4_avatar.png">
+                                    <div class="section_6__feedback-person">
+                                        <div class="section_6__feedback-person-name">
+                                            Булат Мухсинов
+                                        </div>
+                                        <div class="section_6__feedback-person-description">
+                                            Директор по продукту «<a href="#" class="section_6__feedback-company-link">Ингипро</a>»
+                                        </div>
+                                    </div>
+                                    <div class="section_6__feedback-logo">
+                                        <img class="section_6__feedback-logo-pic js-open-portfolio-work" src="portfolio/4_logo_gs.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_6__carousel-item carousel__item js-item">
+                            <div class="section_6__feedback">
+                                <div class="section_6__feedback-bubble">
+                                    <p>Мы долго жили с картинкой из интернета вместо логотипа.</p>
+                                    <p>Спасибо MADE, что сделали нам красивый логотип.</p>
+                                </div>
+                                <div class="section_6__feedback-meta">
+                                    <img class="section_6__feedback-avatar" src="portfolio/7_avatar.png">
+                                    <div class="section_6__feedback-person">
+                                        <div class="section_6__feedback-person-name">
+                                            Артем Ермаков
+                                        </div>
+                                        <div class="section_6__feedback-person-description">
+                                            Основатель сервиса <a href="#" class="section_6__feedback-company-link">GreenSMS</a>
+                                        </div>
+                                    </div>
+                                    <div class="section_6__feedback-logo js-open-portfolio-work">
+                                        <img class="section_6__feedback-logo-pic" src="portfolio/7_logo_gs.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_7">
+        <div class="section__inner">
+            <div class="section_7__form-wrapper js-form-wrapper">
+                <form class="section_7__form js-form">
+                    <div class="section_7__header heading heading_2">
+                        Отправьте свой логотип и&nbsp;узнайте, стоит&nbsp;ли его менять:
+                    </div>
+                    <div class="section_7__form-columns">
+                        <div class="section_7__form-column">
+                            <input class="section_7__form-input input input_color_blue js-input" name="url">
+                            <label class="section_7__form-label js-label">
+                                Ссылка на&nbsp;страницу с&nbsp;лого
+                            </label>
+                        </div>
+                        <div class="section_7__form-column">
+                            <input class="section_7__form-input input input_color_blue js-input" name="name">
+                            <label class="section_7__form-label js-label">
+                                Ваше имя
+                            </label>
+                        </div>
+                        <div class="section_7__form-column">
+                            <input class="section_7__form-input input input_color_blue js-input" name="email" type="email">
+                            <label class="section_7__form-label js-label">
+                                Ваш Email
+                            </label>
+                        </div>
+                    </div>
+                    <button class="button button_blue js-submit">
+                        Отправить и&nbsp;получить консультацию
+                    </button>
+                    <div class="section_7__error-message invisible">
+                        Заполните пожалуйста все поля
+                    </div>
+                </form>
+                <div class="section_7__success js-success hidden">
+                    <div class="section_7__header">
+                        <div class="heading heading_2">
+                            Спасибо за доверие!
+                        </div>
+                        <div class="heading heading_3">
+                            Скоро мы&nbsp;отправим вам бесплатную консультацию-разбор про ваш логотип.
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                        Обычно мы&nbsp;высылаем через 5&nbsp;дней.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section_8">
+        <div class="section__inner">
+            <div class="section_8__header heading heading_2">
+                Получите логотип для бизнеса, который будет работать на&nbsp;вас и&nbsp;ваших клиентов
+            </div>
+            <div class="section_8__tariffs columns">
+                <div class="section_8__tariffs-item columns__item">
+                    <div class="section_8__tariffs-item-title">
+                        <div>
+                            <span class="section_8__tariffs-item-price">999</span>
+                            <span class="section_8__tariffs-item-price-currency">руб.</span>
+                        </div>
+                        <div class="section_8__tariffs-item-comment">
+                            Подойдет тем, кто сомневается
+                        </div>
+                    </div>
+                    <ul class="section_8__tariffs-item-list">
+                        <li class="section_8__tariffs-item-list-item">
+                            Это самый дешевый способ принять решение стоит&nbsp;ли нам довериться, подходим&nbsp;ли мы&nbsp;друг другу
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Возможность увидеть ваш бизнес свежим взглядом
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Вы&nbsp;получите один эскиз, который поможет вам проверить нашу экспертность
+                        </li>
+                    </ul>
+                    <button class="button button_white js-open-application-modal">
+                        Создать логотип
+                    </button>
+                </div>
+                <div class="section_8__tariffs-item columns__item">
+                    <div class="section_8__tariffs-item-title">
+                        <div>
+                            <span class="section_8__tariffs-item-price">5000</span>
+                            <span class="section_8__tariffs-item-price-currency">руб.</span>
+                        </div>
+                        <div class="section_8__tariffs-item-comment">
+                            Подойдет тем, кто только встал на&nbsp;путь бизнеса
+                        </div>
+                    </div>
+                    <ul class="section_8__tariffs-item-list">
+                        <li class="section_8__tariffs-item-list-item">
+                            Если вы&nbsp;тестируете нишу или гипотезу
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Если вы&nbsp;не&nbsp;располагаете бюджетом но&nbsp;вы&nbsp;хотите крутой логотип
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Вы&nbsp;получите 2&nbsp;варианта логотипа с&nbsp;возможностью 3-х доработок особо понравившегося варианта
+                        </li>
+                    </ul>
+                    <button class="button button_white js-open-application-modal">
+                        Заказать 2 логотипа
+                    </button>
+                </div>
+                <div class="section_8__tariffs-item columns__item">
+                    <div class="section_8__tariffs-item-title">
+                        <div>
+                            <span class="section_8__tariffs-item-price">50000</span>
+                            <span class="section_8__tariffs-item-price-currency">руб.</span>
+                        </div>
+                        <div class="section_8__tariffs-item-comment">
+                            Подойдет тем, кто хочет упаковать свой бизнес
+                        </div>
+                    </div>
+                    <ul class="section_8__tariffs-item-list">
+                        <li class="section_8__tariffs-item-list-item">
+                            Если у&nbsp;вас уже есть работающий бизнес
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Если вы&nbsp;склонны влиять на&nbsp;процесс работы
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Гарантия возврата денег, если вам не&nbsp;понравится проверить наш результат
+                        </li>
+                        <li class="section_8__tariffs-item-list-item">
+                            Вы&nbsp;получите логотип и&nbsp;полноценный фирменный стиль с&nbsp;возможностью 10&nbsp;доработок понравившегося варианта
+                        </li>
+                    </ul>
+                    <button class="button button_white js-open-application-modal">
+                        Создать шедевр
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section section_footer">
+        <div class="section__inner">
+            <div class="logo"></div>
+            <p>Россия. Москва</p>
+            <div class="section_footer__info">
+                <span class="section_footer__info-item">© 2009—2019 THEYMADE</span>
+                <a rel="tel" class="section_footer__info-item" href="tel:+7 (963) 968-52-14">
+                    +7 (963) 968-52-14
+                </a>
+                <a rel="email" class="section_footer__info-item" href="mailto:hello@theymade.com">
+                    hello@theymade.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script id="template-modal" type="text/x-handlebars-template">
+        <div class="modal">
+            <div class="modal__layout">
+                <div class="modal__wrapper">
+                    <div class="modal__inner modal-{{name}}">
+                        <div class="modal__close js-close"></div>
+                        <div class="modal__content">
+                            {{{render}}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="template-application" type="text/x-handlebars-template">
+        <div class="application">
+            <form class="application__form">
+                <div class="application__title heading">
+                    Заявка на&nbsp;разработку&nbsp;логотипа
+                </div>
+                <label class="application__input">
+                    <input
+                        class="application__input-control input input_color_blue"
+                        name="name"
+                    >
+                    <br>
+                    <div class="application__input-label">
+                        Как вас зовут
+                    </div>
+                </label>
+                <label class="application__input">
+                    <input
+                        class="application__input-control input input_color_blue"
+                        type="email"
+                    >
+                    <div class="application__input-label">
+                        Ваш Email
+                    </div>
+                </label>
+                <label class="application__input">
+                    <input
+                        class="application__input-control input input_color_blue"
+                        type="tel"
+                    >
+                    <div class="application__input-label">
+                        Как вас зовут
+                    </div>
+                </label>
+                <label class="application__input">
+                <textarea
+                    class="application__input-control input input_color_blue"
+                    rows="4"
+                ></textarea>
+                    <div class="application__input-label">
+                        Название бренда или описание
+                    </div>
+                </label>
+                <button class="button button_blue">
+                    Отправить заявку
+                </button>
+            </form>
+            <div class="application__success hidden">
+                <div class="application__title heading">Спасибо!</div>
+                <div class="application__title heading">Ваша заявка успешно отправлена.</div>
+                <button class="button button_blue">
+                    Закрыть
+                </button>
+            </div>
+        </div>
+    </script>
+</body>
+</html>
