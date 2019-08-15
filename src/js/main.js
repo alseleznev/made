@@ -17,7 +17,7 @@ function carousel($carousel) {
     $ctrlNext.on('click', () => {
         currentPage++;
 
-        slide($items, distance, true);
+        slide($items, currentPage, distance);
 
         if (currentPage + 1 >= totalPages) {
             $ctrlNext.addClass('invisible');
@@ -30,7 +30,7 @@ function carousel($carousel) {
     $ctrlPrev.on('click', () => {
         currentPage--;
 
-        slide($items, currentPage ? distance : 0, false);
+        slide($items, currentPage, distance);
 
         if (currentPage === 0) {
             $ctrlPrev.addClass('invisible');
@@ -41,8 +41,10 @@ function carousel($carousel) {
     });
 }
 
-function slide($el, distance, right) {
-    $el.css('transform', `translateX(${right ? '-' : ''}${distance}px)`);
+function slide($el, pageId, distance) {
+    const px = pageId * distance;
+
+    $el.css('transform', `translateX(-${px}px)`);
 }
 
 function hasTouch() {
