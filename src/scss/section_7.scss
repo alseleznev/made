@@ -1,83 +1,74 @@
-.section.section_7 {
+.section_7 {
     background-color: #3c3743;
     color: #fff;
-}
 
-.section_7 {
     &__header {
-        line-height: 1.18;
+        margin-bottom: 20px;
+
+        .heading {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__form-columns {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__form-column {
+        flex: 1;
+        margin: 0 20px;
+        text-align: left;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__form-input {
-        background: transparent;
-        border: none;
-        border-bottom: solid 2px #36a6fd;
-        color: #36a6fd;
-        margin-right: 1rem;
-        margin-top: 2.5rem;
-
-        &_url {
-            width: 15rem;
-        }
-
-        &_name {
-            width: 13rem;
-        }
-
-        &_mail {
-            width: 11rem;
-        }
+        margin-bottom: 10px;
+        width: 100%;
     }
 
-    &__form-input:focus {
-        outline: none;
-    }
-
-    &__form-input-label {
+    &__form-label {
         color: #9a9a9a;
-        display: inline-block;
-        line-height: 2rem;
-        text-align: left;
+        white-space: nowrap;
     }
 
-    &__button-wrap {
-        margin-top: 55px;
-    }
-
-    &__message {
+    &__error-message {
         color: #ee5454;
         line-height: 2.5rem;
         visibility: hidden;
     }
-
-    &__success-comment {
-        color: #fff;
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
 }
 
-.section_7__form.section_7__form_error {
+.section_7__form.error {
     .section_7__form-input {
         border-bottom: solid 2px #ee5454;
         color: #ee5454;
     }
 
-    .section_7__form-input-wrap {
+    .section_7__form-label {
         color: #ee5454;
     }
 
-    .section_7__message {
-        visibility: visible;
+    .button {
+        background-color: rgba(#fff, 0.2);
+        color: rgba(#fff, 0.45);
+        cursor: auto;
+        pointer-events: none;
+        box-shadow: none !important;
     }
 
-    .button.button_blue {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: rgba(255, 255, 255, 0.45);
-        cursor: auto;
-
-        &:hover {
-            box-shadow: none;
-        }
+    .section_7__error-message {
+        visibility: visible;
     }
 }

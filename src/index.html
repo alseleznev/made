@@ -329,7 +329,7 @@
             </button>
         </div>
     </section>
-    <section class="section section_6">
+    <section class="section section_6" style="display: none;">
         <div class="section__inner">
             <div class="section_6__header heading heading_2">
                 Можно было сразу<br>
@@ -464,96 +464,63 @@
             </div>
         </div>
     </section>
-    <section class="section section_7" style="display: none;">
+    <section class="section section_7">
         <div class="section__inner">
-            <div>
-                <div class="heading heading_2 section_7__header">
-                    Отправьте свой логотип и<br>
-                    узнайте, стоит ли его менять:
-                </div>
-                <div class="section_7__form">
-                    <label class="section_7__form-input-label">
-                        <input
-                            class="section_7__form-input section_7__form-input_url"
-                            type="email"
-                        >
-                        <br>
-                        Ссылка на страницу с лого
-                    </label>
-                    <label class="section_7__form-input-label">
-                        <input
-                            class="section_7__form-input section_7__form-input_name"
-                            type="email"
-                        >
-                        <br>
-                        Ваше имя
-                    </label>
-                    <label class="section_7__form-input-label">
-                        <input
-                            class="section_7__form-input section_7__form-input_mail"
-                            type="email"
-                        >
-                        <br>
-                        Ваш Email
-                    </label>
-                    <div class="section_7__button-wrap">
-                        <button class="button button_blue">
-                            Отправить и получить консультацию
-                        </button>
+            <div class="js-form-wrapper"> <!-- section_7__form_error -->
+                <form class="section_7__form js-form">
+                    <div class="section_7__header heading heading_2">
+                        Отправьте свой логотип и&nbsp;узнайте, стоит&nbsp;ли его менять:
                     </div>
-                    <div class="section_7__message">
+                    <div class="section_7__form-columns">
+                        <div class="section_7__form-column">
+                            <input
+                                class="section_7__form-input input input_color_blue"
+                                name="url"
+                            >
+                            <label class="section_7__form-label">
+                                Ссылка на страницу с лого
+                            </label>
+                        </div>
+                        <div class="section_7__form-column">
+                            <input
+                                class="section_7__form-input input input_color_blue"
+                                name="name"
+                            >
+                            <label class="section_7__form-label">
+                                Ваше имя
+                            </label>
+                        </div>
+                        <div class="section_7__form-column">
+                            <input
+                                class="section_7__form-input input input_color_blue"
+                                name="email"
+                                type="email"
+                            >
+                            <label class="section_7__form-label">
+                                Ваш Email
+                            </label>
+                        </div>
+                    </div>
+                    <button class="button button_blue js-submit">
+                        Отправить и получить консультацию
+                    </button>
+                    <div class="section_7__error-message">
                         Заполните пожалуйста все поля
                     </div>
-                </div>
-            </div>
-            <div class="section_7__success" style="display: none;">
-                <div class="heading section_7__header">
-                    Спасибо за доверие!<br><br>
-                    Скоро мы отправим вам бесплатную<br>
-                    консультацию-разбор про ваш логотип.
-                </div>
-                <div class="section_7__success-comment">
-                    Обычно мы высылаем через 5 дней.
-                </div>
-            </div>
-            <div style="display: none;">
-                <div class="heading section_7__header">
-                    Отправьте свой логотип и<br>
-                    узнайте, стоит ли его менять:
-                </div>
-                <div class="section_7__form section_7__form_error">
-                    <label class="section_7__form-input-label">
-                        <input
-                            class="section_7__form-input section_7__form-input_url"
-                            type="email"
-                        >
-                        <br>
-                        Ссылка на страницу с лого
-                    </label>
-                    <label class="section_7__form-input-label">
-                        <input
-                            class="section_7__form-input section_7__form-input_name"
-                            type="email"
-                        >
-                        <br>
-                        Ваше имя
-                    </label>
-                    <label class="section_7__form-input-label">
-                        <input
-                            class="section_7__form-input section_7__form-input_mail"
-                            type="email"
-                        >
-                        <br>
-                        Ваш Email
-                    </label>
-                    <div class="section_7__button-wrap">
-                        <button class="button button_blue">
-                            Отправить и получить консультацию
-                        </button>
+                </form>
+                <div class="section_7__success js-success hidden">
+                    <div class="section_7__header">
+                        <div class="heading heading_2">
+                            Спасибо за доверие!
+                        </div>
+                        <div class="heading heading_3">
+                            Скоро мы&nbsp;отправим вам бесплатную<br />консультацию-разбор про ваш логотип.
+                        </div>
                     </div>
-                    <div class="section_7__message">
-                        Заполните пожалуйста все поля
-                    </div>
+                    <br />
+                    <p>
+                        Обычно мы высылаем через 5 дней.
+                    </p>
                 </div>
             </div>
         </div>

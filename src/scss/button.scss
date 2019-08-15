@@ -68,13 +68,3 @@
         color: rgba(255, 255, 255, 0.7);
     }
 }
-
-.button.button_blue.button_disabled {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.45);
-    cursor: auto;
-
-    &:hover {
-        box-shadow: none;
-    }
-}
