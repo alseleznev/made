@@ -29,6 +29,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: 'head',
             template: './src/index.html',
+            minify: true,
         }),
     ],
     devServer: {

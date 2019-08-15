@@ -1,16 +1,21 @@
 .section_2 {
     &__header {
-        .heading:first-child {
+        .heading {
             margin-bottom: 50px;
         }
     }
+
     &__info {
-        margin-bottom: 2rem;
+        margin-bottom: 55px;
+        display: flex;
     }
 
     &__info-item {
-        display: inline-block;
-        font-family: Arial, sans-serif;
-        margin: 2.5rem 1rem 1rem 1rem;
+        margin: 0 40px;
+    }
+
+    &__info-item-title {
+        font-weight: bold;
+        margin-bottom: 30px;
     }
 }
