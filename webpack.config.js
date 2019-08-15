@@ -6,7 +6,7 @@ const {
     NODE_ENV,
 } = process.env;
 const IS_DEVELOPMENT = NODE_ENV !== 'production';
-const ROOT = path.join(__dirname, 'dist');
+const ROOT = path.join(__dirname, 'docs');
 
 module.exports = {
     entry: {
@@ -58,13 +58,38 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(gif|png|jpe?g|svg)$/i,
+                test: /\.(png|svg|gif)$/,
                 use: [
-                    'file-loader',
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            hash: 'sha512',
+                            digest: 'hex',
+                            name: 'i/[hash].[ext]',
+                            limit: 1500,
+                        },
+                    },
                     {
                         loader: 'image-webpack-loader',
                         options: {
-                            disable: true,
+                            pngquant: {
+                                speed: IS_DEVELOPMENT ? 10 : 3,
+                                optimizationLevel: IS_DEVELOPMENT ? 0 : 7,
+                                verbose: false,
+                            },
+                            // https://github.com/svg/svgo#what-it-can-do
+                            svgo: {
+                                cleanupAttrs: true,
+                                removeDoctype: true,
+                                removeViewBox: true,
+                                removeComments: true,
+                                removeMetadata: true,
+                                removeDesc: true,
+                                removeEmptyAttrs: true,
+                                removeEmptyText: true,
+                                cleanupIDs: true,
+                                removeUnusedNS: true,
+                            },
                         },
                     },
                 ],
@@ -74,6 +99,11 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',
+                        options: {
+                            hash: 'sha512',
+                            digest: 'hex',
+                            name: 'fonts/[hash].[ext]',
+                        }
                     },
                 ],
             },
