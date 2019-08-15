@@ -1,29 +1,19 @@
-import Handlebars from 'handlebars/dist/handlebars';
+import openApplicationModal from './applicationModal';
 import carousel from './carousel';
 import noHover from './noHover';
 import resizeableInput from './resizeableInput';
 
 $(document).ready(() => {
-    $('.js-resize-input').each((i, el) => resizeableInput($(el)));
-    $('.js-carousel').each((i, el) => carousel($(el)));
-
     noHover();
 
-    const modelTemplate = document.getElementById('template-modal').innerHTML;
-    const applicationTemplate = document.getElementById('template-application').innerHTML;
-    const renderModal = Handlebars.compile(modelTemplate);
-    const renderApplicationModal = () => {
-        const modal = renderModal({
-            modal: {
-                name: 'modal-application',
-                content: Handlebars.compile(applicationTemplate)(),
-            },
-        });
+    $('.js-resize-input').each((i, el) => resizeableInput($(el)));
+    $('.js-carousel').each((i, el) => carousel($(el)));
+    $('.js-open-application-modal').on('click', openApplicationModal);
+    $('.js-scroll-to-prices').on('click', () => {
+        const scrollTo = $('.section_8').offset().top;
 
-        return $(document.body).append(modal);
-    };
-
-    const formModal = renderApplicationModal();
-    console.log(formModal);
-
+        $('html,body').animate({
+            scrollTop: scrollTo,
+        }, 400);
+    });
 });

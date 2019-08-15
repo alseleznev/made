@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_red">
+            <button class="button button_red js-scroll-to-prices">
                 Создать логотип
             </button>
         </div>
@@ -227,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_red">
+            <button class="button button_red js-open-application-modal">
                 Хочу так же
             </button>
         </div>
@@ -267,7 +267,7 @@
                     </div>
                 </li>
             </ol>
-            <button class="button button_red">
+            <button class="button button_red js-open-application-modal">
                 Начать работу
             </button>
         </div>
@@ -314,7 +314,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_red">
+            <button class="button button_red js-open-application-modal">
                 Начать работу
             </button>
         </div>
@@ -542,7 +542,7 @@
                             Вы&nbsp;получите один эскиз, который поможет вам проверить нашу экспертность
                         </li>
                     </ul>
-                    <button class="button button_white">
+                    <button class="button button_white js-open-application-modal">
                         Создать логотип
                     </button>
                 </div>
@@ -567,7 +567,7 @@
                             Вы&nbsp;получите 2&nbsp;варианта логотипа с&nbsp;возможностью 3-х доработок особо понравившегося варианта
                         </li>
                     </ul>
-                    <button class="button button_white">
+                    <button class="button button_white js-open-application-modal">
                         Заказать 2 логотипа
                     </button>
                 </div>
@@ -595,7 +595,7 @@
                             Вы&nbsp;получите логотип и&nbsp;полноценный фирменный стиль с&nbsp;возможностью 10&nbsp;доработок понравившегося варианта
                         </li>
                     </ul>
-                    <button class="button button_white">
+                    <button class="button button_white js-open-application-modal">
                         Создать шедевр
                     </button>
                 </div>
@@ -622,10 +622,10 @@
         <div class="modal">
             <div class="modal__layout">
                 <div class="modal__wrapper">
-                    <div class="modal__inner {{modal.name}}">
-                        <div class="modal__close"></div>
+                    <div class="modal__inner modal-{{name}}">
+                        <div class="modal__close js-close"></div>
                         <div class="modal__content">
-                            {{{modal.content}}}
+                            {{{render}}}
                         </div>
                     </div>
                 </div>
@@ -635,7 +635,6 @@
 
     <script id="template-application" type="text/x-handlebars-template">
         <div class="application">
-            <div class="application__close"></div>
             <form class="application__form">
                 <div class="application__title heading">
                     Заявка на&nbsp;разработку&nbsp;логотипа
