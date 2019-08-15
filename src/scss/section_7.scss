@@ -36,7 +36,6 @@
     &__form-input-label {
         color: #9a9a9a;
         display: inline-block;
-        font-family: Arial, sans-serif;
         line-height: 2rem;
         text-align: left;
     }
@@ -47,14 +46,12 @@
 
     &__message {
         color: #ee5454;
-        font-family: Arial, sans-serif;
         line-height: 2.5rem;
         visibility: hidden;
     }
 
     &__success-comment {
         color: #fff;
-        font-family: Arial, sans-serif;
         font-size: 1.5rem;
         line-height: 3rem;
     }

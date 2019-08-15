@@ -15,6 +15,11 @@
         margin-bottom: 100px;
     }
 
+    &__carousel-wrapper {
+        width: 600px;
+        height: 460px;
+    }
+
     &__carousel-page {
         display: flex;
         flex-wrap: wrap;
