@@ -1,6 +1,6 @@
 .columns {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
 
     &__item {
         margin: 0 40px;
@@ -26,5 +26,27 @@
     &__item-title {
         font-weight: bold;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        &__item {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .columns {
+        flex-direction: column;
+
+        &__item {
+            margin: 0 0 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }

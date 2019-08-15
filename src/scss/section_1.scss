@@ -1,16 +1,13 @@
-.section.section_1 {
+.section_1 {
     background-color: #ee5454;
     color: #fff;
-    flex-direction: column;
-}
 
-.section_1 {
     &__logo {
         margin-bottom: 70px;
     }
 
     &__form {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     &__form-input {
@@ -41,12 +38,13 @@
         font-style: italic;
         font-family: Ubuntu, sans-serif;
         display: inline-block;
-        margin-bottom: 2.5rem;
+        margin-bottom: 50px;
     }
 
     &__form-contacts-item {
         color: #eeb0ae;
         text-align: left;
+        font-size: 20px;
         margin-bottom: 5px;
 
         &:last-child {
@@ -56,8 +54,8 @@
 
     &__error-message {
         color: #fff8a3;
-        font-size: 1rem;
-        line-height: 3rem;
+        font-size: 20px;
+        line-height: 60px;
         visibility: hidden;
     }
 
@@ -66,13 +64,9 @@
         display: none;
     }
 
-    &__stat {
-        display: flex;
-    }
-
     &__stat-item {
         color: #ffcece;
-        margin: 0 50px;
+        white-space: nowrap;
     }
 
     &__stat-item-title {

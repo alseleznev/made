@@ -39,3 +39,17 @@
         flex: 1 0 100%;
     }
 }
+
+@media screen and (max-width: 769px) {
+    .carousel {
+        &__ctrl {
+            &_next {
+                right: -60px;
+            }
+
+            &_prev {
+                left: -60px;
+            }
+        }
+    }
+}

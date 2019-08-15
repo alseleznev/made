@@ -11,7 +11,9 @@
     }
 
     &__carousel {
-
+        .carousel__ctrl {
+            top: 70px;
+        }
     }
 
     &__carousel-wrapper {
