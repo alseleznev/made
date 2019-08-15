@@ -7,12 +7,11 @@
     <title>MADE</title>
 </head>
 <body>
-    <section class="section section_1" style="display: none;">
+    <section class="section section_1">
         <div class="section__inner">
             <div class="section_1__logo logo"></div>
-            <div class="js-form-wrapper">
-                <!-- section_1__form_error -->
-                <form class="section_1__form js-form visible" onsubmit="return false;">
+            <div class="section_1__form-wrapper js-form-wrapper">
+                <form class="section_1__form js-form" onsubmit="return false;">
                     <div class="section_1__form-header heading heading_3">
                         <p>
                             Я
@@ -60,14 +59,13 @@
                     <button class="button button_white js-submit" type="submit">
                         Отправить заявку
                     </button>
-                    <div class="section_1__form-error-message js-error-message invisible">
+                    <div class="section_1__error-message js-error-message invisible">
                         Заполните пожалуйста все поля
                     </div>
                 </form>
-                <div class="heading heading_3 section_1__header js-success hidden">
-                    Спасибо!<br><br>
-                    Ваша заявка успешно<br>
-                    отправлена.
+                <div class="section_1__success-message js-success hidden">
+                    <div class="heading heading_3">Спасибо!</div><br>
+                    <div class="heading heading_3">Ваша&nbsp;заявка успешно&nbsp;отправлена.</div>
                 </div>
             </div>
             <div class="section_1__stat">
@@ -101,7 +99,7 @@
             </div>
         </div>
     </section>
-    <section class="section section_2" style="display: none;">
+    <section class="section section_2">
         <div class="section__inner">
             <div class="section_2__header">
                 <div class="heading heading_2 heading_italic heading_red">
@@ -136,7 +134,7 @@
             </button>
         </div>
     </section>
-    <section class="section section_3" style="display: none;">
+    <section class="section section_3">
         <div class="section__inner">
             <div class="heading heading_2 section_3__header">
                 Мы знаем секрет
@@ -238,7 +236,7 @@
             </button>
         </div>
     </section>
-    <section class="section section_4" style="display: none;">
+    <section class="section section_4">
         <div class="section__inner">
             <div class="section_4__header heading heading_2 heading_red">
                 Выделитесь среди конкурентов<br>
@@ -278,7 +276,7 @@
             </button>
         </div>
     </section>
-    <section class="section section_5" style="display: none;">
+    <section class="section section_5">
         <div class="section__inner">
             <div class="section_5__header heading heading_2">
                 Делаем ставку на репутацию
@@ -329,7 +327,7 @@
             </button>
         </div>
     </section>
-    <section class="section section_6" style="display: none;">
+    <section class="section section_6">
         <div class="section__inner">
             <div class="section_6__header heading heading_2">
                 Можно было сразу<br>
@@ -464,9 +462,9 @@
             </div>
         </div>
     </section>
-    <section class="section section_7" style="display: none;">
+    <section class="section section_7">
         <div class="section__inner">
-            <div class="js-form-wrapper">
+            <div class="section_7__form-wrapper js-form-wrapper">
                 <form class="section_7__form js-form">
                     <div class="section_7__header heading heading_2">
                         Отправьте свой логотип и&nbsp;узнайте, стоит&nbsp;ли его менять:
@@ -474,29 +472,29 @@
                     <div class="section_7__form-columns">
                         <div class="section_7__form-column">
                             <input
-                                class="section_7__form-input input input_color_blue"
+                                class="section_7__form-input input input_color_blue js-input"
                                 name="url"
                             >
-                            <label class="section_7__form-label">
+                            <label class="section_7__form-label js-label">
                                 Ссылка на страницу с лого
                             </label>
                         </div>
                         <div class="section_7__form-column">
                             <input
-                                class="section_7__form-input input input_color_blue"
+                                class="section_7__form-input input input_color_blue js-input"
                                 name="name"
                             >
-                            <label class="section_7__form-label">
+                            <label class="section_7__form-label js-label">
                                 Ваше имя
                             </label>
                         </div>
                         <div class="section_7__form-column">
                             <input
-                                class="section_7__form-input input input_color_blue"
+                                class="section_7__form-input input input_color_blue js-input"
                                 name="email"
                                 type="email"
                             >
-                            <label class="section_7__form-label">
+                            <label class="section_7__form-label js-label">
                                 Ваш Email
                             </label>
                         </div>
@@ -504,7 +502,7 @@
                     <button class="button button_blue js-submit">
                         Отправить и получить консультацию
                     </button>
-                    <div class="section_7__error-message">
+                    <div class="section_7__error-message invisible">
                         Заполните пожалуйста все поля
                     </div>
                 </form>

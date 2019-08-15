@@ -8,9 +8,18 @@
 .input.input_color_red {
     border-bottom-color: #ff7571;
     color: #fff;
+
+    &.invalid {
+        border-bottom-color: #fff8a3;
+    }
 }
 
 .input.input_color_blue {
     border-bottom-color: #36a6fd;
     color: #36a6fd;
+
+    &.invalid {
+        border-bottom: solid 2px #ee5454;
+        color: #ee5454;
+    }
 }

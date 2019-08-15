@@ -5,10 +5,6 @@
 }
 
 .section_1 {
-    &__header {
-        margin-bottom: 9rem;
-    }
-
     &__logo {
         margin-bottom: 70px;
     }
@@ -58,11 +54,16 @@
         }
     }
 
-    &__form-error-message {
+    &__error-message {
         color: #fff8a3;
         font-size: 1rem;
         line-height: 3rem;
-        visibility: visible;
+        visibility: hidden;
+    }
+
+    &__success-message {
+        margin-bottom: 180px;
+        display: none;
     }
 
     &__stat {
@@ -82,30 +83,5 @@
     &__stat-item-comment {
         font-size: 15px;
         line-height: 1.4;
-    }
-}
-
-.section_1__form.section_1__form_error {
-    .section_1__form-input {
-        border-bottom: solid 2px #fff8a3;
-    }
-
-    .section_1__message {
-        visibility: visible;
-    }
-
-    .button.button_white {
-        background: #fff;
-        cursor: auto;
-        opacity: 0.3;
-
-        &:hover {
-            box-shadow: none;
-            color: #ee5454;
-        }
-
-        &:active {
-            color: #ee5454;
-        }
     }
 }
