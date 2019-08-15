@@ -618,70 +618,77 @@
         </div>
     </footer>
 
-    <div class="modal hidden">
-        <div class="modal__layout">
-            <div class="modal__wrapper">
-                <div class="modal__inner">
-                    <div class="modal__content"></div>
+    <script id="template-modal" type="text/x-handlebars-template">
+        <div class="modal">
+            <div class="modal__layout">
+                <div class="modal__wrapper">
+                    <div class="modal__inner {{modal.name}}">
+                        <div class="modal__close"></div>
+                        <div class="modal__content">
+                            {{{modal.content}}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </script>
 
-    <div class="application hidden">
-        <div class="application__close"></div>
-        <form class="application__form">
-            <div class="application__title heading heading_2">
-                Заявка на разработку логотипа
-            </div>
-            <label class="application__input">
-                <input
-                    class="application__input-control input input_color_blue"
-                    name="name"
-                >
-                <br>
-                <div class="application__input-label">
-                    Как вас зовут
+    <script id="template-application" type="text/x-handlebars-template">
+        <div class="application">
+            <div class="application__close"></div>
+            <form class="application__form">
+                <div class="application__title heading">
+                    Заявка на&nbsp;разработку&nbsp;логотипа
                 </div>
-            </label>
-            <label class="application__input">
-                <input
-                    class="application__input-control input input_color_blue"
-                    type="email"
-                >
-                <div class="application__input-label">
-                    Ваш Email
-                </div>
-            </label>
-            <label class="application__input">
-                <input
-                    class="application__input-control input input_color_blue"
-                    type="tel"
-                >
-                <div class="application__input-label">
-                    Как вас зовут
-                </div>
-            </label>
-            <label class="application__input">
+                <label class="application__input">
+                    <input
+                        class="application__input-control input input_color_blue"
+                        name="name"
+                    >
+                    <br>
+                    <div class="application__input-label">
+                        Как вас зовут
+                    </div>
+                </label>
+                <label class="application__input">
+                    <input
+                        class="application__input-control input input_color_blue"
+                        type="email"
+                    >
+                    <div class="application__input-label">
+                        Ваш Email
+                    </div>
+                </label>
+                <label class="application__input">
+                    <input
+                        class="application__input-control input input_color_blue"
+                        type="tel"
+                    >
+                    <div class="application__input-label">
+                        Как вас зовут
+                    </div>
+                </label>
+                <label class="application__input">
                 <textarea
                     class="application__input-control input input_color_blue"
                     rows="4"
                 ></textarea>
-                <div class="application__input-label">
-                    Название бренда или описание
-                </div>
-            </label>
-            <button class="button button_blue">
-                Отправить заявку
-            </button>
-        </form>
-        <div class="application__success hidden">
-            <div class="heading heading_2">Спасибо!</div>
-            <div class="heading heading_2">Ваша заявка успешно отправлена.</div>
-            <button class="button button_blue">
-                Закрыть
-            </button>
+                    <div class="application__input-label">
+                        Название бренда или описание
+                    </div>
+                </label>
+                <button class="button button_blue">
+                    Отправить заявку
+                </button>
+            </form>
+            <div class="application__success hidden">
+                <div class="application__title heading">Спасибо!</div>
+                <div class="application__title heading">Ваша заявка успешно отправлена.</div>
+                <button class="button button_blue">
+                    Закрыть
+                </button>
+            </div>
         </div>
-    </div>
+    </script>
 </body>
 </html>
