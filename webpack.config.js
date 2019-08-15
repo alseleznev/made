@@ -33,7 +33,7 @@ module.exports = {
         }),
     ],
     devServer: {
-        contentBase: ROOT,
+        contentBase: __dirname,
         compress: true,
         port: 3000,
     },
