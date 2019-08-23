@@ -1,4 +1,5 @@
 import openApplicationModal from './applicationModal';
+import openWorkModal from './workModal';
 import carousel from './carousel';
 import noHover from './noHover';
 import initFeedback from './feedback';
@@ -34,6 +35,11 @@ $(document).ready(() => {
 
     $(document).on('click', '.js-open-work', (evt) => {
         const $link = $(evt.currentTarget);
-        console.log($link.data('workId'));
+        const workId = $link.data('workId');
+        const work = window.WORKS.find(work => work.id === workId);
+
+        if (work) {
+            openWorkModal(work);
+        }
     });
 });

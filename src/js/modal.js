@@ -1,13 +1,40 @@
 import loadTemplate from './template';
 
+class Modal {
+    constructor(data) {
+        this.data = data;
+        this.id = Date.now();
+    }
+
+    open() {
+        const template = loadTemplate('modal');
+        const render = template(this.data);
+        this.$modal = $(render);
+
+        $(document.body)
+            .css('overflow', 'hidden')
+            .append(this.$modal);
+
+        this.$modal.on('click', '.js-close', () => this.close());
+
+        $(document).on(`keydown.${this.id}`, (evt) => {
+            if (evt.keyCode === 27) {
+                this.close();
+            }
+        });
+    }
+
+    close() {
+        $(document.body).css('overflow', '');
+
+        $(document).off(`keydown.${this.id}`);
+        this.$modal.remove();
+    }
+}
+
 export default function openModal(data) {
-    const template = loadTemplate('modal');
-    const render = template(data);
-    const $modal = $(render);
+    const modal = new Modal(data);
+    modal.open();
 
-    $(document.body).append($modal);
-
-    $modal.on('click', '.js-close', () => $modal.remove());
-
-    return $modal;
+    return modal;
 }

@@ -508,7 +508,7 @@
                     <div class="section_6__feedback-meta">
                         <img
                             class="section_6__feedback-avatar"
-                            src="portfolio/{{this.id}}_avatar.png"
+                            src="portfolio/{{this.id}}/{{images.avatar}}"
                         />
                         <div class="section_6__feedback-person">
                             <div class="section_6__feedback-person-name">
@@ -521,7 +521,7 @@
                         <div class="section_6__feedback-logo js-open-portfolio-work">
                             <img
                                 class="section_6__feedback-logo-pic js-open-work"
-                                src="portfolio/{{this.id}}_logo_gs.png"
+                                src="portfolio/{{this.id}}/{{images.grayscale}}"
                                 data-work-id="{{this.id}}"
                             />
                         </div>
@@ -541,7 +541,7 @@
                     >
                         <img
                             class="section_3__carousel-item-logo"
-                            src="portfolio/{{this.id}}_logo_color.png"
+                            src="portfolio/{{this.id}}/{{this.images.small}}"
                         />
                         <span class="section_3__carousel-item-title">
                             {{{this.shortTitle}}}
@@ -552,20 +552,69 @@
         {{/each}}
     </script>
 
+    <script id="template-work" type="text/x-handlebars-template">
+        <div class="work">
+            {{#if images.large}}
+                <div class="work__logo">
+                    <img
+                        class="work__img"
+                        src="portfolio/{{id}}/{{images.large}}"
+                        alt=""
+                    />
+                </div>
+            {{/if}}
+            <div class="work__images">
+                {{#each images.full}}
+                    <div class="work__image">
+                        <img
+                            class="work__img"
+                            src="portfolio/{{../id}}/full/{{this}}"
+                            alt=""
+                        />
+                    </div>
+                {{/each}}
+            </div>
+            <div class="work__name">
+                {{{shortTitle}}}
+            </div>
+        </div>
+    </script>
+
     <script>
         window.WORKS = [
             {
-                id: 1,
+                id: 'wall',
+                images: {
+                    small: 'small.png',
+                    large: 'large.jpg',
+                    full: [
+                        '1-2009-2x.jpg',
+                        '4-2016-2x.jpg',
+                    ],
+                },
                 shortTitle: 'Логотип арт-проекта «Стена»',
                 showInPortfolio: true,
             },
             {
-                id: 2,
+                id: 'prsd',
+                images: {
+                    small: 'small.png',
+                    large: 'large.png',
+                },
                 shortTitle: 'Логотип Первого<br/>Специализированного Депозитария',
                 showInPortfolio: true,
             },
             {
-                id: 3,
+                id: 'open_mic',
+                images: {
+                    avatar: 'avatar.png',
+                    small: 'small.png',
+                    large: 'large.png',
+                    grayscale: 'grayscale.png',
+                    full: [
+                        'A1(Gray)-2.jpg',
+                    ],
+                },
                 shortTitle: 'Логотип музыкального фестиваля<br/>Open Mic Music Russia',
                 showInPortfolio: true,
                 feedback: {
@@ -577,7 +626,13 @@
                 },
             },
             {
-                id: 4,
+                id: 'ingipro',
+                images: {
+                    avatar: 'avatar.png',
+                    large: 'large.png',
+                    small: 'small.png',
+                    grayscale: 'grayscale.png',
+                },
                 shortTitle: 'Логотип информационной системы<br/>для проектных институтов «Ингипро»',
                 showInPortfolio: true,
                 feedback: {
@@ -587,17 +642,39 @@
                 },
             },
             {
-                id: 5,
+                id: 'microsoft',
+                images: {
+                    avatar: 'avatar.png',
+                    small: 'small.png',
+                    grayscale: 'grayscale.png',
+                    full: [
+                        'img.jpg',
+                    ],
+                },
                 shortTitle: 'Логотип конференции Microsoft',
                 showInPortfolio: true,
             },
             {
-                id: 6,
+                id: 'ecosoft',
+                images: {
+                    small: 'small.png',
+                    full: [
+                        'img.jpg',
+                    ],
+                },
                 shortTitle: 'Логотип разработчика<br/>информационных систем',
                 showInPortfolio: true,
             },
             {
-                id: 7,
+                id: 'green_sms',
+                images: {
+                    avatar: 'avatar.png',
+                    grayscale: 'grayscale.png',
+                    small: 'small.png',
+                    full: [
+                        'img.jpg',
+                    ],
+                },
                 shortTitle: 'Логотип сервиса<br/>умных СМС-рассылок',
                 showInPortfolio: true,
                 feedback: {
@@ -608,7 +685,10 @@
                 },
             },
             {
-                id: 8,
+                id: 'absoloni',
+                images: {
+                    small: 'small.png',
+                },
                 shortTitle: 'Логотип модельного агентства',
                 showInPortfolio: true,
             },
