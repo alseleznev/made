@@ -6,7 +6,6 @@ const {
     NODE_ENV,
 } = process.env;
 const IS_DEVELOPMENT = NODE_ENV !== 'production';
-const ROOT = path.join(__dirname, 'docs');
 
 module.exports = {
     entry: {
@@ -14,7 +13,7 @@ module.exports = {
     },
     mode: NODE_ENV,
     output: {
-        path: ROOT,
+        path: path.join(__dirname, 'docs'),
         publicPath: '',
     },
     devtool: 'source-map',
@@ -33,7 +32,7 @@ module.exports = {
         }),
     ],
     devServer: {
-        contentBase: __dirname,
+        contentBase: path.join(__dirname, 'public'),
         compress: true,
         port: 3000,
     },

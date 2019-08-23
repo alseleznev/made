@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "rm -rf docs && mkdir docs && cp -r portfolio docs/ && NODE_ENV=production webpack",
+    "build": "rm -rf docs && mkdir docs && cp -r public/* docs/ && NODE_ENV=production webpack",
     "watch": "NODE_ENV=development webpack-dev-server"
   },
   "devDependencies": {
