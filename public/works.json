@@ -2,101 +2,92 @@
     {
         "id": "wall",
         "images": {
-            "small": "small.png",
+            "logo": "logo.png",
             "large": "large.jpg",
-            "full": [
-                "1-2009-2x.jpg",
-                "4-2016-2x.jpg"
-            ]
+            "image": "image.jpg"
         },
-        "shortTitle": "Логотип арт-проекта «Стена»"
+        "title": "Логотип арт-проекта «Стена»"
     },
     {
         "id": "prsd",
         "images": {
-            "small": "small.png",
-            "large": "large.png"
+            "logo": "logo.png",
+            "large": "large.png",
+            "image": "image.jpg"
         },
-        "shortTitle": "Логотип Первого<br/>Специализированного Депозитария"
+        "title": "Логотип Первого<br/>Специализированного Депозитария"
     },
     {
         "id": "open_mic",
         "images": {
             "avatar": "avatar.png",
-            "small": "small.png",
-            "large": "large.png",
+            "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "full": [
-                "A1(Gray)-2.jpg"
-            ]
+            "large": "large.png",
+            "image": "image.jpg"
         },
-        "shortTitle": "Логотип музыкального фестиваля<br/>Open Mic Music Russia",
+        "title": "Логотип музыкального фестиваля<br/>Open Mic Music Russia",
         "feedback": {
             "person": "Alseyda",
-            "description": "Певица и организатор музыкального фестиваля <a href='#'>Open Mic Music Russia</a>",
+            "description": "Певица и организатор музыкального фестиваля <a target='_blank' href='#'>Open Mic Music Russia</a>",
             "text": "<p>Мы провели 8 фестивалей и не имели постоянного логотипа.</p><p>Спасибо, ребятам из MADE за крутое лого, с которым мы провели 9-й фестиваль!</p><p>Выходим на новый уровень!</p>"
         }
     },
     {
         "id": "ingipro",
         "images": {
-            "avatar": "avatar.png",
+            "logo": "logo.png",
+            "grayscale": "grayscale.png",
             "large": "large.png",
-            "small": "small.png",
-            "grayscale": "grayscale.png"
+            "avatar": "avatar.png",
+            "image": "image.jpg"
         },
-        "shortTitle": "Логотип информационной системы<br/>для проектных институтов «Ингипро»",
+        "title": "Логотип информационной системы<br/>для проектных институтов «Ингипро»",
         "feedback": {
             "person": "Булат Мухсинов",
-            "description": "Директор по продукту «<a href='#'>Ингипро</a>»",
+            "description": "Директор по продукту «<a target='_blank' href='https://ingipro.com'>Ингипро</a>»",
             "text": "<span style='font-size: 70px; font-family: Monaco, Arial, sans-serif;'>🔥Спасибо</span>"
         }
     },
     {
         "id": "microsoft",
         "images": {
-            "avatar": "avatar.png",
-            "small": "small.png",
+            "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "full": [
-                "img.jpg"
-            ]
+            "image": "image.jpg",
+            "avatar": "avatar.png"
         },
-        "shortTitle": "Логотип конференции Microsoft"
+        "title": "Логотип конференции Microsoft"
     },
     {
         "id": "ecosoft",
         "images": {
-            "small": "small.png",
-            "full": [
-                "img.jpg"
-            ]
+            "logo": "logo.png",
+            "image": "image.jpg"
         },
-        "shortTitle": "Логотип разработчика<br/>информационных систем"
+        "title": "Логотип разработчика<br/>информационных систем"
     },
     {
         "id": "green_sms",
         "images": {
-            "avatar": "avatar.png",
+            "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "small": "small.png",
-            "full": [
-                "img.jpg"
-            ]
+            "image": "image.jpg",
+            "avatar": "avatar.png"
         },
-        "shortTitle": "Логотип сервиса<br/>умных СМС-рассылок",
+        "title": "Логотип сервиса<br/>умных СМС-рассылок",
         "feedback": {
             "person": "Артем Ермаков",
-            "description": "Основатель сервиса <a href='#'>GreenSMS</a>",
+            "description": "Основатель сервиса <a target='_blank' href='#'>GreenSMS</a>",
             "text": "<p>Мы долго жили с картинкой из интернета вместо логотипа.</p><p>Спасибо MADE, что сделали нам красивый логотип.</p>"
         }
     },
     {
         "id": "absoloni",
         "images": {
-            "small": "small.png",
+            "logo": "logo.png",
             "large": "large.png"
         },
-        "shortTitle": "Логотип модельного агентства"
+        "title": "Логотип модельного агентства"
     }
 ]

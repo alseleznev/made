@@ -541,10 +541,10 @@
                     >
                         <img
                             class="section_3__carousel-item-logo"
-                            src="portfolio/{{this.id}}/{{this.images.small}}"
+                            src="portfolio/{{this.id}}/{{this.images.logo}}"
                         />
                         <span class="section_3__carousel-item-title">
-                            {{{this.shortTitle}}}
+                            {{{this.title}}}
                         </span>
                     </div>
                 {{/each}}
@@ -563,19 +563,15 @@
                     />
                 </div>
             {{/if}}
-            <div class="work__images">
-                {{#each images.full}}
-                    <div class="work__image">
-                        <img
-                            class="work__img"
-                            src="portfolio/{{../id}}/full/{{this}}"
-                            alt=""
-                        />
-                    </div>
-                {{/each}}
+            <div class="work__image">
+                <img
+                    class="work__img"
+                    src="portfolio/{{id}}/{{images.image}}"
+                    alt=""
+                />
             </div>
             <div class="work__name">
-                {{{shortTitle}}}
+                {{{title}}}
             </div>
         </div>
     </script>
