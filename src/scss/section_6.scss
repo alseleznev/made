@@ -69,7 +69,8 @@
 
     &__feedback-avatar {
         height: 69px;
-        width: 69px;
+        /** overwrite carousel styles */
+        width: 69px !important;
         border-radius: 50%;
     }
 

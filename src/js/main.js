@@ -22,17 +22,25 @@ $(document).ready(() => {
     $.getJSON(`works.json?_=${Date.now()}`, (loadedWorks) => {
         const $portfolioCarousel = $('#portfolioCarousel');
         initPortfolio(
-            $portfolioCarousel.find('.js-items'),
+            $portfolioCarousel,
             loadedWorks,
         );
-        carousel($portfolioCarousel);
+        carousel($portfolioCarousel, {
+            items: 1,
+            nav: true,
+            dots: false,
+        });
 
         const $feedbackCarousel = $('#feedbackCarousel');
         initFeedback(
-            $feedbackCarousel.find('.js-items'),
+            $feedbackCarousel,
             loadedWorks.filter(item => item.feedback),
         );
-        carousel($feedbackCarousel);
+        carousel($feedbackCarousel, {
+            items: 1,
+            nav: true,
+            dots: false,
+        });
 
         $(document).on('click', '.js-open-work', (evt) => {
             const $link = $(evt.currentTarget);

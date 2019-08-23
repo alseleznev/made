@@ -143,11 +143,9 @@
                     Мы&nbsp;любим свое дело, работаем только с&nbsp;лучшими и&nbsp;выдаем сильный результат. Посмотрите примеры наших работ:
                 </div>
             </div>
-            <div class="section_3__carousel carousel" id="portfolioCarousel">
-                <div class="carousel__ctrl carousel__ctrl_prev js-ctrl-prev"></div>
-                <div class="carousel__ctrl carousel__ctrl_next js-ctrl-next"></div>
-                <div class="section_3__carousel-wrapper carousel__wrapper js-wrapper">
-                    <div class="section_3__carousel-items carousel__items js-items"></div>
+            <div class="section_3__carousel carousel">
+                <div class="section_3__carousel-wrapper carousel__wrapper">
+                    <div class="owl-carousel owl-theme carousel" id="portfolioCarousel"></div>
                 </div>
             </div>
             <button class="button button_red js-open-application-modal">
@@ -253,11 +251,9 @@
                 с имеющимся логотипом. С логотипом, который<br>
                 плохо выполнен и не решает задачу клиента
             </div>
-            <div class="section_6__carousel carousel" id="feedbackCarousel">
-                <div class="carousel__ctrl carousel__ctrl_prev js-ctrl-prev"></div>
-                <div class="carousel__ctrl carousel__ctrl_next js-ctrl-next"></div>
-                <div class="section_6__carousel-wrapper carousel__wrapper js-wrapper">
-                    <div class="carousel__items js-items"></div>
+            <div class="section_6__carousel carousel">
+                <div class="section_6__carousel-wrapper carousel__wrapper">
+                    <div class="owl-carousel owl-theme carousel" id="feedbackCarousel"></div>
                 </div>
             </div>
         </div>
@@ -533,7 +529,7 @@
 
     <script id="template-portfolio" type="text/x-handlebars-template">
         {{#each chunks}}
-            <div class="section_3__carousel-page carousel__item js-item">
+            <div class="section_3__carousel-page">
                 {{#each this}}
                     <div
                         class="section_3__carousel-item js-open-work"
