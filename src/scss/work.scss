@@ -1,27 +1,19 @@
 .work {
-    padding: 170px 95px 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
 
     &__logo {
-        margin-bottom: 70px;
-    }
-
-    &__images {
-        margin-bottom: 65px;
-        min-height: 650px;
+        margin-bottom: 80px;
     }
 
     &__image {
-        margin-bottom: 15px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
+        margin-bottom: 50px;
     }
 
     &__img {
+        /** rewrite owl-carousel styles */
+        width: auto !important;
         display: block;
         margin: 0 auto;
         max-width: 100%;

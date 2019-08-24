@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 const {
     NODE_ENV,
@@ -29,6 +30,11 @@ module.exports = {
             inject: 'head',
             template: './src/index.html',
             minify: true,
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
     ],
     devServer: {
@@ -108,5 +114,4 @@ module.exports = {
             },
         ]
     },
-
 };

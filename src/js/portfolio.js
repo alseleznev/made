@@ -1,4 +1,5 @@
-import chunk from 'lodash.chunk';
+import chunk from 'lodash/chunk';
+import carousel from './carousel';
 import loadTemplate from './template';
 
 export default function portfolio($placeholder, items) {
@@ -9,4 +10,10 @@ export default function portfolio($placeholder, items) {
     });
 
     $placeholder.html(render);
+
+    carousel($placeholder, {
+        items: 1,
+        nav: true,
+        dots: false,
+    });
 }

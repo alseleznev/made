@@ -1,6 +1,5 @@
-import openApplicationModal from './applicationModal';
-import openWorkModal from './workModal';
-import carousel from './carousel';
+import openApplicationModal from './modalApplication';
+import openWorkModal from './modalWork';
 import noHover from './noHover';
 import initFeedback from './feedback';
 import initPortfolio from './portfolio';
@@ -20,19 +19,17 @@ $(document).ready(() => {
     });
 
     $.getJSON(`works.json?_=${Date.now()}`, (loadedWorks) => {
-        const $portfolioCarousel = $('#portfolioCarousel');
+        const $portfolioCarousel = $('#portfolio-carousel');
         initPortfolio(
-            $portfolioCarousel.find('.js-items'),
+            $portfolioCarousel,
             loadedWorks,
         );
-        carousel($portfolioCarousel);
 
-        const $feedbackCarousel = $('#feedbackCarousel');
+        const $feedbackCarousel = $('#feedback-carousel');
         initFeedback(
-            $feedbackCarousel.find('.js-items'),
+            $feedbackCarousel,
             loadedWorks.filter(item => item.feedback),
         );
-        carousel($feedbackCarousel);
 
         $(document).on('click', '.js-open-work', (evt) => {
             const $link = $(evt.currentTarget);
@@ -40,9 +37,11 @@ $(document).ready(() => {
             const work = loadedWorks.find(work => work.id === workId);
 
             if (work) {
-                openWorkModal(work);
+                openWorkModal({
+                    works: loadedWorks,
+                    index: loadedWorks.map(work => work.id).indexOf(workId),
+                });
             }
         });
-
     });
 });
