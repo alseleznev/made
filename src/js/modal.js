@@ -12,7 +12,7 @@ class Modal {
         this.$modal = $(render);
 
         $(document.body)
-            .css('overflow', 'hidden')
+            .addClass('no-scroll')
             .append(this.$modal);
 
         this.$modal.on('click', '.js-close', () => this.close());
@@ -25,7 +25,7 @@ class Modal {
     }
 
     close() {
-        $(document.body).css('overflow', '');
+        $(document.body).removeClass('no-scroll');
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();
