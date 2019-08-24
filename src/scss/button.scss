@@ -74,8 +74,9 @@
 
 @media screen and (max-width: 420px) {
     .button {
+        display: block;
         min-width: auto;
-        width: 290px;
+        max-width: 290px;
         margin: 0 auto;
     }
 }

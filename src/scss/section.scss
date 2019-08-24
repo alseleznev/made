@@ -13,11 +13,10 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
     .section {
         &__inner {
-            padding-right: 20px !important;
-            padding-left: 20px !important;
+            padding: 50px 20px;
         }
     }
 }

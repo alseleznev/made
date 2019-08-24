@@ -60,14 +60,26 @@
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 800px) {
     .carousel {
         .owl-next {
-            right: -60px;
+            right: -50px;
         }
 
         .owl-prev {
-            left: -60px;
+            left: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carousel {
+        .owl-next {
+            right: -30px;
+        }
+
+        .owl-prev {
+            left: -30px;
         }
     }
 }

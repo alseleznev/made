@@ -1,17 +1,16 @@
 .modal-application {
+    max-width: 700px;
     padding: 55px 110px 90px;
     text-align: center;
 }
 
 .application {
-    &__form {
-        margin-bottom: 30px;
-    }
-
     &__title {
         font-size: 40px;
         margin-bottom: 50px;
         text-align: center;
+        font-family: Ubuntu, sans-serif;
+        font-weight: 500;
     }
 
     &__input {
@@ -29,3 +28,14 @@
     }
 }
 
+@media screen and (max-width: 440px) {
+    .modal-application {
+        padding: 90px 30px;
+    }
+
+    .application {
+        &__title {
+            font-size: 25px;
+        }
+    }
+}

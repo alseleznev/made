@@ -4,7 +4,9 @@ import loadTemplate from './template';
 
 export default function portfolio($placeholder, items) {
     const template = loadTemplate('portfolio');
-    const chunks = chunk(items, 4);
+    const windowWidth = $(window).width();
+    const chunkSize = windowWidth > 600 ? 4 : 2;
+    const chunks = chunk(items, chunkSize);
     const render = template({
         chunks,
     });
