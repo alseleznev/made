@@ -64,8 +64,8 @@
 }
 
 .button.button_blue.disabled {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.45);
+    opacity: 0.3;
+    background-color: #36a6fd;
     cursor: auto;
     pointer-events: none;
     box-shadow: none !important;

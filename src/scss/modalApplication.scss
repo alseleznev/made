@@ -1,8 +1,9 @@
-.application {
+.modal-application {
     padding: 55px 110px 90px;
-    display: block;
     text-align: center;
+}
 
+.application {
     &__form {
         margin-bottom: 30px;
     }
@@ -15,23 +16,13 @@
 
     &__input {
         margin-bottom: 30px;
-        display: block;
-    }
 
-    &__input-label {
-        line-height: 2;
-        color: #9a9a9a;
-        text-align: left;
-    }
-
-    &__input-control {
-        width: 100%;
-        color: #000 !important;
+        .input__control {
+            color: #000 !important;
+        }
     }
 
     &__success {
-        padding: 250px 0;
-
         .application__title {
             margin-bottom: 30px;
         }

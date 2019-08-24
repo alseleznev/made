@@ -11,57 +11,63 @@
     <section class="section section_1">
         <div class="section__inner">
             <div class="section_1__logo logo"></div>
-            <div class="section_1__form-wrapper js-form-wrapper">
-                <form class="section_1__form js-form" onsubmit="return false;">
+            <div class="section_1__form-wrapper form js-form-wrapper">
+                <form class="section_1__form form__form js-form">
                     <div class="section_1__form-header heading heading_3">
                         <p>
                             Я
-                            <input
-                                id="input-1"
-                                class="section_1__form-input section_1__form-input_type_name input input_color_red js-resize-input"
-                                type="text"
-                                name="name"
-                                autofocus
-                            />
+                            <span class="input input_color_red js-input">
+                                <input
+                                    class="input__control js-resize-input"
+                                    type="text"
+                                    name="name"
+                                    autofocus
+                                />
+                            </span>
                         </p>
                         <p>
                             хочу заказать эскиз логотипа для своего бренда «
-                            <input
-                                id="input-2"
-                                class="section_1__form-input section_1__form-input_type_brand input input_color_red js-resize-input js-input"
-                                type="text"
-                                name="brand"
-                            />
+                            <span class="input input_color_red js-input">
+                                <input
+                                    class="input__control js-resize-input"
+                                    type="text"
+                                    name="brand"
+                                />
+                            </span>
                             » за&nbsp;999&nbsp;руб.
                         </p>
                     </div>
                     <div class="section_1__form-contacts">
                         <div class="section_1__form-contacts-item">
                             Мой e-mail
-                            <input
-                                class="section_1__form-input section_1__form-input_type_email input input_color_red js-input"
-                                name="email"
-                                type="email"
-                            >
+                            <div class="input input_color_red js-input">
+                                <input
+                                    class="input__control"
+                                    type="email"
+                                    name="email"
+                                />
+                            </div>
                         </div>
                         <div class="section_1__form-contacts-item">
                             Мой телефон
-                            <input
-                                class="section_1__form-input section_1__form-input_type_phone input input_color_red js-input"
-                                name="phone"
-                                type="tel"
-                            >
+                            <div class="input input_color_red js-input">
+                                <input
+                                    class="input__control"
+                                    type="tel"
+                                    name="tel"
+                                />
+                            </div>
                         </div>
                     </div>
                     <br>
                     <button class="button button_white js-submit" type="submit">
                         Отправить заявку
                     </button>
-                    <div class="section_1__error-message js-error-message invisible">
+                    <div class="section_1__error-message js-error invisible">
                         Заполните пожалуйста все поля
                     </div>
                 </form>
-                <div class="section_1__success-message js-success hidden">
+                <div class="section_1__success-message form__success js-success hidden">
                     <div class="heading heading_3">Спасибо!</div><br>
                     <div class="heading heading_3">Ваша&nbsp;заявка успешно&nbsp;отправлена.</div>
                 </div>
@@ -257,49 +263,57 @@
     </section>
     <section class="section section_7">
         <div class="section__inner">
-            <div class="section_7__form-wrapper js-form-wrapper">
-                <form class="section_7__form js-form">
+            <div class="section_7__form-wrapper form js-form-wrapper">
+                <form class="section_7__form form__form js-form">
                     <div class="section_7__header heading heading_2">
                         Отправьте свой логотип и&nbsp;узнайте, стоит&nbsp;ли его менять:
                     </div>
                     <div class="section_7__form-columns">
                         <div class="section_7__form-column">
-                            <input
-                                class="section_7__form-input input input_color_blue js-input"
-                                name="url"
-                            >
-                            <label class="section_7__form-label js-label">
-                                Ссылка на&nbsp;страницу с&nbsp;лого
-                            </label>
+                            <div class="input input_block input_color_blue js-input">
+                                <input
+                                    class="input__control"
+                                    name="url"
+                                    type="text"
+                                >
+                                <div class="input__label">
+                                    Ссылка на&nbsp;страницу с&nbsp;лого
+                                </div>
+                            </div>
                         </div>
                         <div class="section_7__form-column">
-                            <input
-                                class="section_7__form-input input input_color_blue js-input"
-                                name="name"
-                            >
-                            <label class="section_7__form-label js-label">
-                                Ваше имя
-                            </label>
+                            <div class="input input_block input_color_blue js-input">
+                                <input
+                                    class="input__control"
+                                    name="name"
+                                    type="text"
+                                >
+                                <div class="input__label">
+                                    Ваше имя
+                                </div>
+                            </div>
                         </div>
                         <div class="section_7__form-column">
-                            <input
-                                class="section_7__form-input input input_color_blue js-input"
-                                name="email"
-                                type="email"
-                            >
-                            <label class="section_7__form-label js-label">
-                                Ваш Email
-                            </label>
+                            <div class="input input_block input_color_blue js-input">
+                                <input
+                                    class="input__control"
+                                    name="email"
+                                    type="email"
+                                >
+                                <div class="input__label">
+                                    Ваш Email
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="button button_blue js-submit">
                         Отправить и&nbsp;получить консультацию
                     </button>
-                    <div class="section_7__error-message invisible">
+                    <div class="section_7__error-message js-error invisible">
                         Заполните пожалуйста все поля
                     </div>
                 </form>
-                <div class="section_7__success js-success hidden">
+                <div class="section_7__success form__success js-success hidden">
                     <div class="section_7__header">
                         <div class="heading heading_2">
                             Спасибо за доверие!
@@ -435,56 +449,60 @@
     </script>
 
     <script id="template-application" type="text/x-handlebars-template">
-        <div class="application">
-            <form class="application__form">
+        <div class="application form js-form-wrapper">
+            <form class="application__form form__form js-form">
                 <div class="application__title heading">
                     Заявка на&nbsp;разработку&nbsp;логотипа
                 </div>
-                <label class="application__input">
+                <label class="application__input input input_block input_color_blue js-input">
                     <input
-                        class="application__input-control input input_color_blue"
+                        class="input__control"
                         name="name"
+                        type="text"
+                        autofocus
                     >
-                    <br>
-                    <div class="application__input-label">
+                    <div class="input__label">
                         Как вас зовут
                     </div>
                 </label>
-                <label class="application__input">
+                <label class="application__input input input_block input_color_blue js-input">
                     <input
-                        class="application__input-control input input_color_blue"
+                        class="input__control"
+                        name="email"
                         type="email"
                     >
-                    <div class="application__input-label">
+                    <div class="input__label">
                         Ваш Email
                     </div>
                 </label>
-                <label class="application__input">
+                <label class="application__input input input_block input_color_blue js-input">
                     <input
-                        class="application__input-control input input_color_blue"
+                        class="input__control"
+                        name="tel"
                         type="tel"
                     >
-                    <div class="application__input-label">
-                        Как вас зовут
+                    <div class="input__label">
+                        Телефон
                     </div>
                 </label>
-                <label class="application__input">
-                <textarea
-                    class="application__input-control input input_color_blue"
-                    rows="4"
-                ></textarea>
-                    <div class="application__input-label">
+                <label class="application__input input input_block input_color_blue js-input">
+                    <textarea
+                        class="input__control"
+                        rows="4"
+                        name="brand"
+                    ></textarea>
+                    <div class="input__label">
                         Название бренда или описание
                     </div>
                 </label>
-                <button class="button button_blue">
+                <button class="button button_blue js-submit">
                     Отправить заявку
                 </button>
             </form>
-            <div class="application__success hidden">
+            <div class="application__success form__success js-success hidden">
                 <div class="application__title heading">Спасибо!</div>
                 <div class="application__title heading">Ваша заявка успешно отправлена.</div>
-                <button class="button button_blue">
+                <button class="button button_blue js-close">
                     Закрыть
                 </button>
             </div>

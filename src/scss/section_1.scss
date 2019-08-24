@@ -7,26 +7,28 @@
     }
 
     &__form {
-        margin-bottom: 20px;
-    }
+        padding-bottom: 20px; /** error message */
 
-    &__form-input {
-        font-family: Ubuntu, sans-serif;
-        font-style: italic;
-        max-width: 600px;
+        .input {
+            &__control {
+                font-family: Ubuntu, sans-serif;
+                font-style: italic;
+                max-width: 600px;
 
-        &_type_name {
-            width: 360px;
-        }
+                &[type="name"] {
+                    width: 360px;
+                }
 
-        &_type_brand {
-            width: 160px;
-            max-width: 350px;
-        }
+                &[type="brand"] {
+                    width: 160px;
+                    max-width: 350px;
+                }
 
-        &_type_email,
-        &_type_phone {
-            width: 350px;
+                &[type="email"],
+                &[type="tel"] {
+                    width: 350px;
+                }
+            }
         }
     }
 
@@ -56,12 +58,6 @@
         color: #fff8a3;
         font-size: 20px;
         line-height: 60px;
-        visibility: hidden;
-    }
-
-    &__success-message {
-        margin-bottom: 180px;
-        display: none;
     }
 
     &__stat-item {
