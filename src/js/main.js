@@ -1,13 +1,15 @@
+import initFeedback from './feedback';
+import initForm from './form';
 import openApplicationModal from './modalApplication';
 import openWorkModal from './modalWork';
 import noHover from './noHover';
-import initFeedback from './feedback';
 import initPortfolio from './portfolio';
 import resizeableInput from './resizeableInput';
 
 $(document).ready(() => {
     noHover();
 
+    $('.js-form-wrapper').each((i, el) => initForm($(el)));
     $('.js-resize-input').each((i, el) => resizeableInput($(el)));
     $('.js-open-application-modal').on('click', openApplicationModal);
     $('.js-scroll-to-prices').on('click', () => {

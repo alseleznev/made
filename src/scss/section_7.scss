@@ -33,20 +33,6 @@
         }
     }
 
-    &__form-input {
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-    &__form-label {
-        color: #9a9a9a;
-        white-space: nowrap;
-
-        &.invalid {
-            color: #ee5454;
-        }
-    }
-
     &__error-message {
         color: #ee5454;
         line-height: 50px;

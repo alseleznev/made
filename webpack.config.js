@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 
 const {
     NODE_ENV,
@@ -27,14 +26,10 @@ module.exports = {
             allChunks: true,
         }),
         new HtmlWebpackPlugin({
-            inject: 'head',
+            inject: 'body',
             template: './src/index.html',
             minify: true,
-        }),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
+            hash: !IS_DEVELOPMENT,
         }),
     ],
     devServer: {
@@ -107,7 +102,7 @@ module.exports = {
                         options: {
                             hash: 'sha512',
                             digest: 'hex',
-                            name: 'fonts/[hash].[ext]',
+                            name: 'fonts/[name].[ext]',
                         }
                     },
                 ],
