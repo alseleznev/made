@@ -6,3 +6,11 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 440px) {
+    .about {
+        br {
+            display: none;
+        }
+    }
+}

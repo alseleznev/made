@@ -38,11 +38,49 @@
     }
 
     &__list-item-title {
-        font-size: 32px;
         margin-bottom: 10px;
     }
 
     &__list-item-comment {
         line-height: 1.35;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section_4 {
+        &__list {
+            margin-bottom: 50px;
+        }
+
+        &__list-item {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section_4 {
+        &__header {
+            margin-bottom: 40px;
+        }
+
+        &__list {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        &__list-item {
+            margin-bottom: 40px;
+            padding-top: 45px;
+
+            &:before {
+                top: 0;
+                left: calc(50% - 32px / 2);
+            }
+        }
+
+        br {
+            display: none;
+        }
     }
 }
