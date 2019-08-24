@@ -12,3 +12,12 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .section {
+        &__inner {
+            padding-right: 20px !important;
+            padding-left: 20px !important;
+        }
+    }
+}

@@ -3,7 +3,8 @@
     border: none;
     border-radius: 6px;
     font-size: 17px;
-    line-height: 47px;
+    line-height: 45px;
+    height: 47px;
     outline: none;
     padding: 0 17px;
     text-transform: uppercase;
@@ -69,4 +70,12 @@
     cursor: auto;
     pointer-events: none;
     box-shadow: none !important;
+}
+
+@media screen and (max-width: 420px) {
+    .button {
+        min-width: auto;
+        width: 290px;
+        margin: 0 auto;
+    }
 }

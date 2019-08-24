@@ -1,11 +1,3 @@
-#hide,
-#hide-small {
-    position: absolute;
-    height: 0;
-    overflow: hidden;
-    white-space: pre;
-}
-
 body {
     font-family: Arial, sans-serif;
     font-display: swap;
@@ -25,8 +17,6 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 17px;
-    }
+.nowrap {
+    white-space: nowrap;
 }
