@@ -119,6 +119,15 @@
 
 @media screen and (max-width: 800px) {
     .section_6 {
+        .owl-next,
+        .owl-prev {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section_6 {
         &__carousel {
             width: 350px;
             margin: 0 auto;
@@ -130,11 +139,6 @@
         }
 
         &__feedback-logo {
-            display: none;
-        }
-
-        .owl-next,
-        .owl-prev {
             display: none;
         }
 
