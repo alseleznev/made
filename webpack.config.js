@@ -1,6 +1,9 @@
 const path = require('path');
+const BrotliPlugin = require('brotli-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const {
     NODE_ENV,
@@ -16,9 +19,22 @@ module.exports = {
         path: path.join(__dirname, 'docs'),
         publicPath: '',
     },
-    devtool: 'source-map',
+    devtool: IS_DEVELOPMENT ? 'eval' : '',
     optimization: {
         noEmitOnErrors: false,
+        minimizer: [
+            !IS_DEVELOPMENT && new UglifyJsPlugin({
+                cache: true,
+                extractComments: true,
+            }),
+        ].filter(Boolean),
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'public'),
+        port: 3000,
+        hot: false,
+        inline: false,
+        compress: false,
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -31,14 +47,31 @@ module.exports = {
             minify: true,
             hash: !IS_DEVELOPMENT,
         }),
+        !IS_DEVELOPMENT && new CompressionPlugin({
+            filename: '[path].gz[query]',
+            algorithm: 'gzip',
+            test: /\.(js|css|html)$/,
+            threshold: 10240,
+            minRatio: 0.8,
+        }),
+        !IS_DEVELOPMENT && new BrotliPlugin({
+            asset: '[path].br[query]',
+            test: /\.(js|css|html)$/,
+            threshold: 10240,
+            minRatio: 0.8,
+        }),
     ],
-    devServer: {
-        contentBase: path.join(__dirname, 'public'),
-        compress: true,
-        port: 3000,
-    },
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                    },
+                ],
+            },
             {
                 test: /\.s?css$/,
                 use: [
