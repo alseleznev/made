@@ -26,7 +26,7 @@ module.exports = {
             allChunks: true,
         }),
         new HtmlWebpackPlugin({
-            inject: 'head',
+            inject: 'body',
             template: './src/index.html',
             minify: true,
             hash: !IS_DEVELOPMENT,
@@ -102,7 +102,7 @@ module.exports = {
                         options: {
                             hash: 'sha512',
                             digest: 'hex',
-                            name: 'fonts/[hash].[ext]',
+                            name: 'fonts/[name].[ext]',
                         }
                     },
                 ],
