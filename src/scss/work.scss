@@ -1,5 +1,4 @@
 .work {
-    padding: 170px 50px 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,6 +12,8 @@
     }
 
     &__img {
+        /** rewrite owl-carousel styles */
+        width: auto !important;
         display: block;
         margin: 0 auto;
         max-width: 100%;

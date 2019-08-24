@@ -11,13 +11,12 @@
     }
 
     &__carousel {
-        .carousel__ctrl {
+        width: 600px;
+
+        .owl-prev,
+        .owl-next {
             top: 70px;
         }
-    }
-
-    &__carousel-wrapper {
-        width: 600px;
     }
 
     &__carousel-page {

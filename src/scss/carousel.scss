@@ -62,14 +62,12 @@
 
 @media screen and (max-width: 769px) {
     .carousel {
-        &__ctrl {
-            &_next {
-                right: -60px;
-            }
+        .owl-next {
+            right: -60px;
+        }
 
-            &_prev {
-                left: -60px;
-            }
+        .owl-prev {
+            left: -60px;
         }
     }
 }

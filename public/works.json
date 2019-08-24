@@ -86,7 +86,8 @@
         "id": "absoloni",
         "images": {
             "logo": "logo.png",
-            "large": "large.png"
+            "large": "large.png",
+            "image": "image.jpg"
         },
         "title": "Логотип модельного агентства"
     }
