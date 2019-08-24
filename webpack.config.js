@@ -30,6 +30,7 @@ module.exports = {
             inject: 'head',
             template: './src/index.html',
             minify: true,
+            hash: !IS_DEVELOPMENT,
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
