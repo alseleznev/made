@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
 
 const {
     NODE_ENV,
@@ -31,11 +30,6 @@ module.exports = {
             template: './src/index.html',
             minify: true,
             hash: !IS_DEVELOPMENT,
-        }),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
         }),
     ],
     devServer: {
