@@ -97,6 +97,10 @@
 
 @media all and (max-width: 440px) {
     .section_1 {
+        &__logo {
+            margin-bottom: 60px;
+        }
+
         &__form {
             .input {
                 &__control {
