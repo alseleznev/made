@@ -112,12 +112,22 @@
         &__tariffs-item {
             padding-right: 10px;
             padding-left: 10px;
-            padding-bottom: 60px;
+            padding-bottom: 0 !important;
             margin-bottom: 50px !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
 
             &:last-child {
                 margin-bottom: 0;
             }
+
+            .button {
+                position: static;
+            }
+        }
+
+        &__tariffs-item-list {
+            margin-bottom: 45px;
         }
     }
 }
