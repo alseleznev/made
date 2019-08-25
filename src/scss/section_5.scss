@@ -13,3 +13,19 @@
         margin-bottom: 60px;
     }
 }
+
+@media screen and (max-width: 440px) {
+    .section_5 {
+        &__header {
+            margin-bottom: 20px;
+        }
+
+        &__about {
+            margin-bottom: 70px;
+        }
+
+        &__columns {
+            margin-bottom: 30px;
+        }
+    }
+}

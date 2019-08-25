@@ -2,6 +2,20 @@
     max-width: 800px;
 
     .modal__content {
-        padding: 170px 50px 50px;
+        padding: 170px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .modal-work {
+        .modal__content {
+            padding-top: 100px;
+        }
+    }
+
+    .application {
+        &__title {
+            font-size: 25px;
+        }
     }
 }

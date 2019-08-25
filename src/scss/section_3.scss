@@ -11,8 +11,9 @@
 
     &__carousel {
         width: 600px;
-        height: 460px;
-        margin-bottom: 50px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #b6ccdd;
+        margin-bottom: 40px;
     }
 
     &__carousel-page {
@@ -36,10 +37,51 @@
     }
 
     &__carousel-item-logo {
-        width: 60%;
+        width: 60% !important;
         object-fit: contain;
         height: 100px;
         display: block;
         margin: 0 auto 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section_3 {
+        &__carousel {
+            width: 560px;
+        }
+
+        &__carousel-item {
+            font-size: 13px;
+            line-height: 1.38;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section_3 {
+        &__carousel {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        &__carousel-page {
+            flex-flow: column;
+        }
+
+        &__carousel-item {
+            padding: 0;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section_3 {
+        &__carousel {
+            width: 290px;
+        }
     }
 }

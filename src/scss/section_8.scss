@@ -3,7 +3,7 @@
     color: #fff;
 
     &__header {
-        margin-bottom: 80px;
+        margin-bottom: 85px;
     }
 
     &__sub-title {
@@ -61,8 +61,73 @@
 
 @media screen and (max-width: 768px) {
     .section_8 {
+        .section__inner {
+            padding-right: 28px;
+            padding-left: 28px;
+        }
+
+        &__header {
+            margin-bottom: 65px;
+        }
+
         &__tariffs-item-price {
             font-size: 40px;
+        }
+
+        &__tariffs-item-list-item {
+            margin-bottom: 25px;
+        }
+
+        &__tariffs {
+            .columns__item {
+                margin: 0 20px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section_8 {
+        .section__inner {
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+
+        &__header {
+            margin-bottom: 50px;
+        }
+
+        &__tariffs-item-comment {
+            margin-top: 15px;
+        }
+
+        &__tariffs-item {
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 0 !important;
+            margin-bottom: 50px !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .button {
+                position: static;
+            }
+        }
+
+        &__tariffs-item-list {
+            margin-bottom: 45px;
         }
     }
 }

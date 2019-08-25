@@ -1,16 +1,9 @@
-#hide,
-#hide-small {
-    position: absolute;
-    height: 0;
-    overflow: hidden;
-    white-space: pre;
-}
-
 body {
     font-family: Arial, sans-serif;
     font-display: swap;
     color: #000;
     font-size: 20px;
+    overflow-x: hidden; /** fix mobile right paddings bugs */
 
     p {
         margin: 0;
@@ -25,8 +18,12 @@ body {
     }
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 768px) {
     body {
-        font-size: 17px;
+        font-size: 15px;
     }
 }

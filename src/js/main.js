@@ -11,7 +11,7 @@ $(document).ready(() => {
 
     $('.js-form-wrapper').each((i, el) => initForm($(el)));
     $('.js-resize-input').each((i, el) => resizeableInput($(el)));
-    $('.js-open-application-modal').on('click', openApplicationModal);
+    $(document).on('click', '.js-open-application-modal', openApplicationModal);
     $('.js-scroll-to-prices').on('click', () => {
         const scrollTo = $('.section_8').offset().top;
 

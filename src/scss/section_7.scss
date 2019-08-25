@@ -2,8 +2,12 @@
     background-color: #3c3743;
     color: #fff;
 
+    .section__inner {
+        padding-bottom: 30px;
+    }
+
     &__header {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         .heading {
             margin-bottom: 30px;
@@ -36,6 +40,34 @@
     &__error-message {
         color: #ee5454;
         line-height: 50px;
-        visibility: hidden;
+    }
+
+    .text-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .section_7 {
+        &__form-columns {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        &__form-column {
+            margin: 0 0 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .text-desktop {
+            display: none;
+        }
+
+        .text-mobile {
+            display: block;
+        }
     }
 }
