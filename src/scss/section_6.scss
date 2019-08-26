@@ -68,10 +68,12 @@
     }
 
     &__feedback-avatar {
-        height: 69px;
+        height: 68px;
         /** overwrite carousel styles */
-        width: 69px !important;
+        width: 68px !important;
         border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
     }
 
     &__feedback-person {
