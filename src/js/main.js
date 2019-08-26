@@ -1,3 +1,4 @@
+import sortBy from 'lodash/sortBy';
 import initFeedback from './feedback';
 import initForm from './form';
 import openApplicationModal from './modalApplication';
@@ -30,7 +31,7 @@ $(document).ready(() => {
         const $feedbackCarousel = $('#feedback-carousel');
         initFeedback(
             $feedbackCarousel,
-            loadedWorks.filter(item => item.feedback),
+            sortBy(loadedWorks.filter(item => item.feedback), 'feedbackOrder'),
         );
 
         $(document).on('click', '.js-open-work', (evt) => {
