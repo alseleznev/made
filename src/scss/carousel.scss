@@ -1,6 +1,12 @@
 .carousel {
     position: relative;
 
+    &,
+    .owl-stage {
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    }
+
     .owl-prev,
     .owl-next {
         background: url(../i/arrow-gray.svg) no-repeat center !important;
