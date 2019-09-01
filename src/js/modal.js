@@ -15,7 +15,13 @@ export class Modal {
             .addClass('has-modal')
             .append(this.$modal);
 
-        this.$modal.on('click', '.js-close', () => this.close());
+        this.$modal.on('click', '.js-close', (evt) => {
+            evt.stopPropagation();
+
+            if (evt.target.classList.contains('js-close')) {
+                this.close();
+            }
+        });
 
         $(document).on(`keydown.${this.id}`, (evt) => {
             if (evt.keyCode === 27) {
