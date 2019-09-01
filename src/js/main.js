@@ -1,4 +1,5 @@
 import sortBy from 'lodash/sortBy';
+import hasTouch from './hasTouch';
 import initFeedback from './feedback';
 import initForm from './form';
 import openApplicationModal from './modalApplication';
@@ -8,10 +9,16 @@ import initPortfolio from './portfolio';
 import resizeableInput from './resizeableInput';
 
 $(document).ready(() => {
-    noHover();
+    if (hasTouch()) {
+        $(document.body).addClass('has-touch');
+        noHover();
+    }
 
-    $('.js-form-wrapper').each((i, el) => initForm($(el)));
+    const $formWrapper = $('.js-form-wrapper');
+    $formWrapper.each((i, el) => initForm($(el)));
+
     $('.js-resize-input').each((i, el) => resizeableInput($(el)));
+
     $(document).on('click', '.js-open-application-modal', openApplicationModal);
     $('.js-scroll-to-prices').on('click', () => {
         const scrollTo = $('.section_8').offset().top;
