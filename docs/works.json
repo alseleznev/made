@@ -20,6 +20,7 @@
     },
     {
         "id": "open_mic",
+        "disabled": true,
         "images": {
             "avatar": "avatar.png",
             "logo": "logo.png",
@@ -37,6 +38,7 @@
     },
     {
         "id": "ingipro",
+        "disabled": true,
         "images": {
             "logo": "logo.png",
             "grayscale": "grayscale.png",
