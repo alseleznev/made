@@ -68,13 +68,17 @@ body.has-modal {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 768px) {
     .modal {
         &__wrapper {
             padding: 20px;
             max-width: calc(100vw - 40px);
         }
+    }
+}
 
+@media screen and (max-width: 690px) {
+    .modal {
         &__inner {
             border-radius: 0;
             min-width: auto;
