@@ -39,27 +39,28 @@ $(document).ready(() => {
     });
 
     $.getJSON(`works.json?_=${Date.now()}`, (loadedWorks) => {
+        const activeWorks = loadedWorks.filter(work => !work.disabled);
         const $portfolioCarousel = $('#portfolio-carousel');
         initPortfolio(
             $portfolioCarousel,
-            loadedWorks,
+            activeWorks,
         );
 
         const $feedbackCarousel = $('#feedback-carousel');
         initFeedback(
             $feedbackCarousel,
-            sortBy(loadedWorks.filter(item => item.feedback), 'feedbackOrder'),
+            sortBy(activeWorks.filter(item => item.feedback), 'feedbackOrder'),
         );
 
         $(document).on('click', '.js-open-work', (evt) => {
             const $link = $(evt.currentTarget);
             const workId = $link.data('workId');
-            const work = loadedWorks.find(work => work.id === workId);
+            const work = activeWorks.find(work => work.id === workId);
 
             if (work) {
                 openWorkModal({
-                    works: loadedWorks,
-                    index: loadedWorks.map(work => work.id).indexOf(workId),
+                    works: activeWorks,
+                    index: activeWorks.map(work => work.id).indexOf(workId),
                 });
             }
         });
