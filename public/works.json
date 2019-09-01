@@ -3,17 +3,18 @@
         "id": "wall",
         "images": {
             "logo": "logo.png",
-            "large": "large.jpg",
-            "image": "image.jpg"
+            "large": "1_Wall.jpg",
+            "image": "2_Wall.jpg"
         },
-        "title": "Логотип арт-проекта «Стена»"
+        "title": "Логотип арт-проекта «Стена»",
+        "fullTitle": "Логотип арт-проекта «Стена»"
     },
     {
         "id": "prsd",
         "images": {
             "logo": "logo.png",
-            "large": "large.png",
-            "image": "image.jpg"
+            "large": "1_PRSD.jpg",
+            "image": "2_PRSD.jpg"
         },
         "title": "Логотип Первого<br/>Специализированного Депозитария"
     },
@@ -23,8 +24,8 @@
             "avatar": "avatar.png",
             "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "large": "large.png",
-            "image": "image.jpg"
+            "large": "1_OpenMic.jpg",
+            "image": "2_OpenMic.jpg"
         },
         "title": "Логотип музыкального фестиваля<br/>Open Mic Music Russia",
         "feedback": {
@@ -39,9 +40,9 @@
         "images": {
             "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "large": "large.png",
-            "avatar": "avatar.png",
-            "image": "image.jpg"
+            "large": "1_Ingipro.jpg",
+            "image": "2_Ingipro.jpg",
+            "avatar": "avatar.png"
         },
         "title": "Логотип информационной системы<br/>для проектных институтов «Ингипро»",
         "feedback": {
@@ -56,8 +57,9 @@
         "images": {
             "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "image": "image.jpg",
-            "avatar": "avatar.png"
+            "avatar": "avatar.png",
+            "large": "1_Microsoft.jpg",
+            "image": "2_Microsoft.jpg"
         },
         "title": "Логотип конференции Microsoft",
         "feedback": {
@@ -71,7 +73,8 @@
         "id": "ecosoft",
         "images": {
             "logo": "logo.png",
-            "image": "image.jpg"
+            "large": "1_Ecosoft.jpg",
+            "image": "2_Ecosoft.jpg"
         },
         "title": "Логотип разработчика<br/>информационных систем"
     },
@@ -80,8 +83,9 @@
         "images": {
             "logo": "logo.png",
             "grayscale": "grayscale.png",
-            "image": "image.jpg",
-            "avatar": "avatar.png"
+            "avatar": "avatar.png",
+            "large": "1_GreenSMS.jpg",
+            "image": "2_GreenSMS.jpg"
         },
         "title": "Логотип сервиса<br/>умных СМС-рассылок",
         "feedback": {
@@ -95,8 +99,8 @@
         "id": "absoloni",
         "images": {
             "logo": "logo.png",
-            "large": "large.png",
-            "image": "image.jpg"
+            "large": "1_Absoloni.jpg",
+            "image": "2_Absoloni.jpg"
         },
         "title": "Логотип модельного агентства"
     }
