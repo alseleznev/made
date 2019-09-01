@@ -64,6 +64,7 @@
     &__feedback-meta {
         display: flex;
         padding-left: 20px;
+        margin-bottom: 40px;
         align-items: center;
     }
 
@@ -113,10 +114,6 @@
         max-width: 130px;
         cursor: pointer;
     }
-
-    &__button {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -142,11 +139,6 @@
 
         &__feedback-logo {
             display: none;
-        }
-
-        &__button {
-            display: block;
-            margin-top: 40px;
         }
     }
 }
