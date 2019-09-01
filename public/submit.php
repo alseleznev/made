@@ -9,10 +9,10 @@ $brand = $_POST['brand'] ?: 'New brand name';
 $email = $_POST['email'] ?: 'mail@ixax.me';
 $tel = $_POST['tel'] ?: '+7 (965) 308-58-94';
 $price = $_POST['price'] ?: '999';
-$target = $_POST['target'] ?: 'gall';
+$conversion = $_POST['conversion'] ?: 'otsyv';
 
 $subject = "New order";
-$message = "Name: " . $name . "\r\n" . "Brand: " . $brand . "\r\n" . "Email: " . $email . "\r\n" . "Tel: " . $tel . "\r\n" . "Price: " . $price . "\r\n" . "Target: " . $target;
+$message = "Name: " . $name . "\r\n" . "Brand: " . $brand . "\r\n" . "Email: " . $email . "\r\n" . "Tel: " . $tel . "\r\n" . "Price: " . $price . "\r\n" . "Conversion: " . $conversion;
 $headers = "From:" . $from;
 
 mail($to, $subject, $message, $headers)

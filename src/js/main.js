@@ -19,9 +19,17 @@ $(document).ready(() => {
 
     $('.js-autogrow-input').each((i, el) => resizeableInput($(el)));
 
-    $(document).on('click', '.js-open-application-modal', (evt) => openApplicationModal({
-        type: $(evt.currentTarget).data('type'),
-    }));
+    $(document).on('click', '.js-open-application-modal', (evt) => {
+        const {
+            conversion,
+            price,
+        } = $(evt.currentTarget).data();
+
+        openApplicationModal({
+            conversion,
+            price,
+        });
+    });
     $('.js-scroll-to-prices').on('click', () => {
         const scrollTo = $('.section_8').offset().top;
 
