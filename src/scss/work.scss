@@ -2,12 +2,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: relative;
     height: 100%;
 
     &__logo {
-        margin-bottom: 20px;
+        margin-bottom: 80px;
     }
 
     &__image {
@@ -25,5 +24,15 @@
     &__name {
         font-size: 21px;
         line-height: 1.24;
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .work {
+        &__logo,
+        &__image {
+            margin-bottom: 30px;
+        }
     }
 }

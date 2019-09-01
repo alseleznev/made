@@ -5,6 +5,7 @@ export default function carousel($carousel, options) {
     return $carousel.owlCarousel({
         navText: '',
         loop: true,
+        margin: 5,
         ...options,
     });
 }

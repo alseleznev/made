@@ -1,9 +1,8 @@
 .modal-work {
-    max-width: 800px;
-    margin-bottom: 10px;
+    max-width: 690px;
 
     .modal__content {
-        padding: 140px 50px 35px;
+        padding: 140px 100px 35px;
     }
 
     .owl-stage-outer {
@@ -19,16 +18,10 @@
     }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 690px) {
     .modal-work {
         .modal__content {
-            padding-top: 35px;
-        }
-    }
-
-    .application {
-        &__title {
-            font-size: 25px;
+            padding: 80px 20px 100px;
         }
     }
 }
