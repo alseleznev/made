@@ -13,7 +13,8 @@ $conversion = $_POST['conversion'];
 
 $subject = "New order";
 $message = "Name: " . $name . "\r\n" . "Brand: " . $brand . "\r\n" . "Email: " . $email . "\r\n" . "Tel: " . $tel . "\r\n" . "Price: " . $price . "\r\n" . "Conversion: " . $conversion;
-$headers = "From:" . $from;
+$headers = "From:" . $from . "\r\n";
+$headers .= "Content-Type: text/plain; charset=\"utf-8\"\r\n";
 
 mail($to, $subject, $message, $headers)
 ?>
