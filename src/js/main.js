@@ -14,6 +14,10 @@ $(document).ready(() => {
         noHover();
     }
 
+    alert(
+        $(window).width()
+    );
+
     const $formWrapper = $('.js-form-wrapper');
     $formWrapper.each((i, el) => initForm($(el)));
 
