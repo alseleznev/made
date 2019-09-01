@@ -63,7 +63,7 @@
     .modal {
         &__wrapper {
             padding: 20px;
-            max-width: 100vw - 40px;
+            max-width: calc(100vw - 40px);
         }
 
         &__inner {

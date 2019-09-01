@@ -16,7 +16,7 @@
             "large": "1_PRSD.jpg",
             "image": "2_PRSD.jpg"
         },
-        "title": "Логотип Первого<br/>Специализированного Депозитария"
+        "title": "Логотип Первого <br/>Специализированного Депозитария"
     },
     {
         "id": "open_mic",
@@ -27,7 +27,7 @@
             "large": "1_OpenMic.jpg",
             "image": "2_OpenMic.jpg"
         },
-        "title": "Логотип музыкального фестиваля<br/>Open Mic Music Russia",
+        "title": "Логотип музыкального фестиваля <br/>Open Mic Music Russia",
         "feedback": {
             "person": "Alseyda",
             "description": "Певица и организатор музыкального фестиваля <a target='_blank' href='https://www.instagram.com/openmicmusicrussia/'>Open Mic Music Russia</a>",
@@ -44,7 +44,7 @@
             "image": "2_Ingipro.jpg",
             "avatar": "avatar.png"
         },
-        "title": "Логотип информационной системы<br/>для проектных институтов «Ингипро»",
+        "title": "Логотип информационной системы <br/>для проектных институтов «Ингипро»",
         "feedback": {
             "person": "Булат Мухсинов",
             "description": "Директор по продукту «<a target='_blank' href='https://ingipro.com'>Ингипро</a>»",
@@ -76,7 +76,7 @@
             "large": "1_Ecosoft.jpg",
             "image": "2_Ecosoft.jpg"
         },
-        "title": "Логотип разработчика<br/>информационных систем"
+        "title": "Логотип разработчика <br/>информационных систем"
     },
     {
         "id": "green_sms",
@@ -87,7 +87,7 @@
             "large": "1_GreenSMS.jpg",
             "image": "2_GreenSMS.jpg"
         },
-        "title": "Логотип сервиса<br/>умных СМС-рассылок",
+        "title": "Логотип сервиса <br/>умных СМС-рассылок",
         "feedback": {
             "person": "Артем Ермаков",
             "description": "Основатель сервиса <a target='_blank' href='https://greensms.ru'>GreenSMS</a>",
