@@ -1,4 +1,4 @@
-const SUBMIT_URL = 'http://theymade.com/submit.php';
+const SUBMIT_URL = 'submit.php';
 
 function processFormInput($input) {
     $input
