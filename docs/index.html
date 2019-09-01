@@ -7,7 +7,7 @@
     <link rel="preload" href="fonts/Ubuntu-Medium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="fonts/Ubuntu-MediumItalic.ttf" as="font" type="font/ttf" crossorigin>
     <title>MADE</title>
-<link href="client.css?c2d49f9dbb71e374d636" rel="stylesheet"></head>
+<link href="client.css?35c791fde1739c3ffdd0" rel="stylesheet"></head>
 <body>
     <section class="section section_1">
         <div class="section__inner">
@@ -47,7 +47,8 @@
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" name="price" value="0">
+                    <input type="hidden" name="price" value="999">
+                    <input type="hidden" name="conversion" value="999">
                     <button class="button button_white js-submit" name="submit">
                         Отправить заявку
                     </button>
@@ -141,7 +142,7 @@
             <div class="section_3__carousel">
                 <div class="carousel owl-carousel" id="portfolio-carousel"></div>
             </div>
-            <button class="button button_red js-open-application-modal" data-price="999">
+            <button class="button button_red js-open-application-modal" data-price="" data-conversion="gall">
                 Хочу так же
             </button>
         </div>
@@ -181,7 +182,7 @@
                     </div>
                 </li>
             </ol>
-            <button class="button button_red js-open-application-modal" data-price="999">
+            <button class="button button_red js-open-application-modal" data-price="" data-conversion="step">
                 Начать работу
             </button>
         </div>
@@ -228,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_red js-open-application-modal" data-price="999">
+            <button class="button button_red js-open-application-modal" data-price="" data-conversion="repa">
                 Начать работу
             </button>
         </div>
@@ -282,7 +283,8 @@
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" name="price" value="0">
+                    <input type="hidden" name="price" value="">
+                    <input type="hidden" name="conversion" value="expert">
                     <button class="button button_blue js-submit" name="submit">
                         <span class="text-desktop">Отправить и&nbsp;получить консультацию</span>
                         <span class="text-mobile">Получить консультацию</span>
@@ -335,7 +337,7 @@
                             Вы&nbsp;получите один эскиз, который поможет вам проверить нашу экспертность
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal" data-price="999">
+                    <button class="button button_white js-open-application-modal" data-price="999" data-conversion="price">
                         Создать логотип
                     </button>
                 </div>
@@ -360,7 +362,7 @@
                             Вы&nbsp;получите 2&nbsp;логотипа с&nbsp;возможностью 3-х доработок лучшего варианта
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal" data-price="5000">
+                    <button class="button button_white js-open-application-modal" data-price="5000" data-conversion="price">
                         Заказать 2 логотипа
                     </button>
                 </div>
@@ -388,7 +390,7 @@
                             Вы&nbsp;получите логотип и&nbsp;полноценный фирменный стиль с&nbsp;возможностью внести до 5&nbsp;доработок в лучший вариант
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal" data-price="50000">
+                    <button class="button button_white js-open-application-modal" data-price="50 000" data-conversion="price">
                         Создать шедевр
                     </button>
                 </div>
@@ -437,6 +439,9 @@
             <form class="application__form form__form js-form">
                 <div class="application__title">
                     Заявка на разработку логотипа
+                    {{#if price}}
+                    за {{price}} руб.
+                    {{/if}}
                 </div>
                 <label class="application__input input input_block input_color_blue js-input">
                     <input
@@ -482,7 +487,12 @@
                 <input
                     type="hidden"
                     name="price"
-                    value="{{type}}"
+                    value="{{price}}"
+                />
+                <input
+                    type="hidden"
+                    name="conversion"
+                    value="{{conversion}}"
                 />
                 <button class="button button_blue js-submit" name="submit">
                     Отправить заявку
@@ -526,7 +536,11 @@
                             />
                         </div>
                     </div>
-                    <button class="button button_red js-open-application-modal" data-price="999">
+                    <button
+                        class="button button_red js-open-application-modal"
+                        data-price=""
+                        data-conversion="otzv"
+                    >
                         Оставить заявку
                     </button>
                 </div>
@@ -583,5 +597,5 @@
         </div>
     </script>
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="client.js?c2d49f9dbb71e374d636"></script></body>
+<script type="text/javascript" src="client.js?35c791fde1739c3ffdd0"></script></body>
 </html>
