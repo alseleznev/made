@@ -17,7 +17,7 @@ $(document).ready(() => {
     const $formWrapper = $('.js-form-wrapper');
     $formWrapper.each((i, el) => initForm($(el)));
 
-    $('.js-resize-input').each((i, el) => resizeableInput($(el)));
+    $('.js-autogrow-input').each((i, el) => resizeableInput($(el)));
 
     $(document).on('click', '.js-open-application-modal', (evt) => openApplicationModal({
         type: $(evt.currentTarget).data('type'),

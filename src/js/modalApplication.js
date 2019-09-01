@@ -1,3 +1,5 @@
+import 'jquery-autogrow-textarea';
+
 import initForm from './form';
 import openModal from './modal';
 import loadTemplate from './template';
@@ -13,6 +15,7 @@ export default function openApplicationModal(data) {
 
     initForm(modal.$modal.find('.js-form-wrapper'));
     modal.$modal.find('input:first').focus();
+    modal.$modal.find('.js-autogrow-textarea').autogrow();
 
     return modal;
 }
