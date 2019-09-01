@@ -1,7 +1,8 @@
 import loadTemplate from './template';
 
-class Modal {
-    constructor(data) {
+export class Modal {
+    constructor(data, callbacks = {}) {
+        this.callbacks = callbacks;
         this.data = data;
         this.id = Date.now();
     }
@@ -22,6 +23,10 @@ class Modal {
                 this.close();
             }
         });
+
+        if (typeof this.callbacks.onOpen === 'function') {
+            onOpen();
+        }
     }
 
     close() {
@@ -29,6 +34,10 @@ class Modal {
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();
+
+        if (typeof this.callbacks.onClose === 'function') {
+            onClose();
+        }
     }
 }
 
