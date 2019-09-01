@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="preload" href="fonts/Ubuntu-Medium.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="fonts/Ubuntu-MediumItalic.ttf" as="font" type="font/ttf" crossorigin>
@@ -62,7 +63,12 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button button_white js-submit">
+                    <input
+                        type="hidden"
+                        name="type"
+                        value="0"
+                    />
+                    <button class="button button_white js-submit" name="submit">
                         Отправить заявку
                     </button>
                     <div class="section_1__error-message js-error invisible">
@@ -155,7 +161,7 @@
             <div class="section_3__carousel">
                 <div class="carousel owl-carousel" id="portfolio-carousel"></div>
             </div>
-            <button class="button button_red js-open-application-modal">
+            <button class="button button_red js-open-application-modal" data-type="0">
                 Хочу так же
             </button>
         </div>
@@ -195,7 +201,7 @@
                     </div>
                 </li>
             </ol>
-            <button class="button button_red js-open-application-modal">
+            <button class="button button_red js-open-application-modal" data-type="0">
                 Начать работу
             </button>
         </div>
@@ -242,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_red js-open-application-modal">
+            <button class="button button_red js-open-application-modal" data-type="0">
                 Начать работу
             </button>
         </div>
@@ -275,7 +281,7 @@
                             <div class="input input_block input_color_blue js-input">
                                 <input
                                     class="input__control"
-                                    name="url"
+                                    name="brand"
                                     type="text"
                                 >
                                 <div class="input__label">
@@ -308,7 +314,12 @@
                             </div>
                         </div>
                     </div>
-                    <button class="button button_blue js-submit">
+                    <input
+                        type="hidden"
+                        name="type"
+                        value="0"
+                    />
+                    <button class="button button_blue js-submit" name="submit">
                         <span class="text-desktop">Отправить и&nbsp;получить консультацию</span>
                         <span class="text-mobile">Получить консультацию</span>
                     </button>
@@ -360,7 +371,7 @@
                             Вы&nbsp;получите один эскиз, который поможет вам проверить нашу экспертность
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal">
+                    <button class="button button_white js-open-application-modal" data-type="0">
                         Создать логотип
                     </button>
                 </div>
@@ -385,7 +396,7 @@
                             Вы&nbsp;получите 2&nbsp;логотипа с&nbsp;возможностью 3-х доработок лучшего варианта
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal">
+                    <button class="button button_white js-open-application-modal" data-type="1">
                         Заказать 2 логотипа
                     </button>
                 </div>
@@ -413,7 +424,7 @@
                             Вы&nbsp;получите логотип и&nbsp;полноценный фирменный стиль с&nbsp;возможностью внести до 5&nbsp;доработок в лучший вариант
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal">
+                    <button class="button button_white js-open-application-modal" data-type="2">
                         Создать шедевр
                     </button>
                 </div>
@@ -504,7 +515,12 @@
                         Название бренда или описание
                     </div>
                 </label>
-                <button class="button button_blue js-submit">
+                <input
+                    type="hidden"
+                    name="type"
+                    value="{{type}}"
+                />
+                <button class="button button_blue js-submit" name="submit">
                     Отправить заявку
                 </button>
             </form>
@@ -546,7 +562,7 @@
                             />
                         </div>
                     </div>
-                    <button class="section_6__button button button_red js-open-application-modal">
+                    <button class="section_6__button button button_red js-open-application-modal" data-type="0">
                         Оставить заявку
                     </button>
                 </div>
