@@ -12,7 +12,7 @@ export class Modal {
         this.$modal = $(render);
 
         $(document.body)
-            .addClass('no-scroll')
+            .addClass('has-modal')
             .append(this.$modal);
 
         this.$modal.on('click', '.js-close', () => this.close());
@@ -25,7 +25,7 @@ export class Modal {
     }
 
     close() {
-        $(document.body).removeClass('no-scroll');
+        $(document.body).removeClass('has-modal');
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();
