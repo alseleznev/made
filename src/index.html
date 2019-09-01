@@ -20,7 +20,7 @@
                                 Я
                                 <span class="input input_color_red js-input">
                                     <input
-                                        class="input__control js-resize-input"
+                                        class="input__control js-autogrow-input"
                                         type="text"
                                         name="name"
                                     />
@@ -32,7 +32,7 @@
                             «
                             <span class="input input_color_red js-input">
                                 <input
-                                    class="input__control js-resize-input"
+                                    class="input__control js-autogrow-input"
                                     type="text"
                                     name="brand"
                                 />
@@ -65,7 +65,7 @@
                     </div>
                     <input
                         type="hidden"
-                        name="type"
+                        name="price"
                         value="0"
                     />
                     <button class="button button_white js-submit" name="submit">
@@ -161,7 +161,7 @@
             <div class="section_3__carousel">
                 <div class="carousel owl-carousel" id="portfolio-carousel"></div>
             </div>
-            <button class="button button_red js-open-application-modal" data-type="0">
+            <button class="button button_red js-open-application-modal" data-price="999">
                 Хочу так же
             </button>
         </div>
@@ -201,7 +201,7 @@
                     </div>
                 </li>
             </ol>
-            <button class="button button_red js-open-application-modal" data-type="0">
+            <button class="button button_red js-open-application-modal" data-price="999">
                 Начать работу
             </button>
         </div>
@@ -248,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button button_red js-open-application-modal" data-type="0">
+            <button class="button button_red js-open-application-modal" data-price="999">
                 Начать работу
             </button>
         </div>
@@ -316,7 +316,7 @@
                     </div>
                     <input
                         type="hidden"
-                        name="type"
+                        name="price"
                         value="0"
                     />
                     <button class="button button_blue js-submit" name="submit">
@@ -352,7 +352,7 @@
             <div class="section_8__tariffs columns">
                 <div class="section_8__tariffs-item columns__item">
                     <div class="section_8__tariffs-item-title">
-                        <div>
+                        <div class="section_8__tariffs-item-price-wrapper">
                             <span class="section_8__tariffs-item-price">999</span>
                             <span class="section_8__tariffs-item-price-currency">руб.</span>
                         </div>
@@ -371,13 +371,13 @@
                             Вы&nbsp;получите один эскиз, который поможет вам проверить нашу экспертность
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal" data-type="0">
+                    <button class="button button_white js-open-application-modal" data-price="999">
                         Создать логотип
                     </button>
                 </div>
                 <div class="section_8__tariffs-item columns__item">
                     <div class="section_8__tariffs-item-title">
-                        <div>
+                        <div class="section_8__tariffs-item-price-wrapper">
                             <span class="section_8__tariffs-item-price">5000</span>
                             <span class="section_8__tariffs-item-price-currency">руб.</span>
                         </div>
@@ -396,13 +396,13 @@
                             Вы&nbsp;получите 2&nbsp;логотипа с&nbsp;возможностью 3-х доработок лучшего варианта
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal" data-type="1">
+                    <button class="button button_white js-open-application-modal" data-price="5000">
                         Заказать 2 логотипа
                     </button>
                 </div>
                 <div class="section_8__tariffs-item columns__item">
                     <div class="section_8__tariffs-item-title">
-                        <div>
+                        <div class="section_8__tariffs-item-price-wrapper">
                             <span class="section_8__tariffs-item-price">50 000</span>
                             <span class="section_8__tariffs-item-price-currency">руб.</span>
                         </div>
@@ -424,7 +424,7 @@
                             Вы&nbsp;получите логотип и&nbsp;полноценный фирменный стиль с&nbsp;возможностью внести до 5&nbsp;доработок в лучший вариант
                         </li>
                     </ul>
-                    <button class="button button_white js-open-application-modal" data-type="2">
+                    <button class="button button_white js-open-application-modal" data-price="50000">
                         Создать шедевр
                     </button>
                 </div>
@@ -456,7 +456,7 @@
     <script id="template-modal" type="text/x-handlebars-template">
         <div class="modal">
             <div class="modal__layout">
-                <div class="modal__wrapper">
+                <div class="modal__wrapper js-close">
                     <div class="modal__inner modal-{{name}}">
                         <div class="modal__close js-close"></div>
                         <div class="modal__content">
@@ -507,8 +507,8 @@
                 </label>
                 <label class="application__input input input_block input_color_blue js-input">
                     <textarea
-                        class="input__control"
-                        rows="4"
+                        class="input__control js-autogrow-textarea"
+                        rows="1"
                         name="brand"
                     ></textarea>
                     <div class="input__label">
@@ -517,7 +517,7 @@
                 </label>
                 <input
                     type="hidden"
-                    name="type"
+                    name="price"
                     value="{{type}}"
                 />
                 <button class="button button_blue js-submit" name="submit">
@@ -562,7 +562,7 @@
                             />
                         </div>
                     </div>
-                    <button class="section_6__button button button_red js-open-application-modal" data-type="0">
+                    <button class="button button_red js-open-application-modal" data-price="999">
                         Оставить заявку
                     </button>
                 </div>
@@ -594,7 +594,7 @@
     <script id="template-work" type="text/x-handlebars-template">
         <div class="carousel owl-carousel js-carousel">
             {{#each works}}
-                <div class="work">
+                <div class="work js-ctrl-next">
                     {{#if this.images.large}}
                         <div class="work__logo">
                             <img

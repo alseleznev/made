@@ -1,6 +1,6 @@
 import loadTemplate from './template';
 
-class Modal {
+export class Modal {
     constructor(data) {
         this.data = data;
         this.id = Date.now();
@@ -12,10 +12,16 @@ class Modal {
         this.$modal = $(render);
 
         $(document.body)
-            .addClass('no-scroll')
+            .addClass('has-modal')
             .append(this.$modal);
 
-        this.$modal.on('click', '.js-close', () => this.close());
+        this.$modal.on('click', '.js-close', (evt) => {
+            evt.stopPropagation();
+
+            if (evt.target.classList.contains('js-close')) {
+                this.close();
+            }
+        });
 
         $(document).on(`keydown.${this.id}`, (evt) => {
             if (evt.keyCode === 27) {
@@ -25,7 +31,7 @@ class Modal {
     }
 
     close() {
-        $(document.body).removeClass('no-scroll');
+        $(document.body).removeClass('has-modal');
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="61px" height="33px" viewBox="0 0 61 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title>Combined Shape</title>
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-7-(28-jul-2019)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="1_1024-Main" transform="translate(-810.000000, -4490.000000)" fill="#3F9DF9">
-            <g id="6" transform="translate(0.000000, 3916.000000)">
-                <g id="Group-6" transform="translate(684.000000, 356.000000)">
-                    <path d="M186.643741,218 L126,251 L141.078281,218 L186.643741,218 Z" id="Combined-Shape"></path>
-                </g>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Unknown" fill="#3999f8">
+            <polygon id="Path" points="60.644 0 0 33 15.078 0"></polygon>
         </g>
     </g>
 </svg>

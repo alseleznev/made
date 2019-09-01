@@ -1,3 +1,12 @@
+body.has-modal {
+    overflow-y: hidden;
+
+    .owl-prev,
+    .owl-next {
+        visibility: hidden;
+    }
+}
+
 .modal {
     position: fixed;
     z-index: 100;
