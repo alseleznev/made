@@ -39,17 +39,16 @@ $(document).ready(() => {
     });
 
     $.getJSON(`works.json?_=${Date.now()}`, (loadedWorks) => {
-        const activeWorks = loadedWorks.filter(work => !work.disabled);
         const $portfolioCarousel = $('#portfolio-carousel');
         initPortfolio(
             $portfolioCarousel,
-            activeWorks,
+            loadedWorks,
         );
 
         const $feedbackCarousel = $('#feedback-carousel');
         initFeedback(
             $feedbackCarousel,
-            sortBy(activeWorks.filter(item => item.feedback), 'feedbackOrder'),
+            sortBy(loadedWorks.filter(item => item.feedback), 'feedbackOrder'),
         );
 
         $(document).on('click', '.js-open-work', (evt) => {
@@ -59,8 +58,8 @@ $(document).ready(() => {
 
             if (work) {
                 openWorkModal({
-                    works: activeWorks,
-                    index: activeWorks.map(work => work.id).indexOf(workId),
+                    works: loadedWorks,
+                    index: loadedWorks.map(work => work.id).indexOf(workId),
                 });
             }
         });
