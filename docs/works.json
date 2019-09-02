@@ -20,7 +20,6 @@
     },
     {
         "id": "open_mic",
-        "disabled": true,
         "images": {
             "avatar": "avatar.png",
             "logo": "logo.png",
@@ -29,7 +28,8 @@
             "image": "2_OpenMic.jpg"
         },
         "title": "Логотип музыкального фестиваля <br/>Open Mic Music Russia",
-        "feedback": {
+        "feedback": false,
+        "feedback1": {
             "person": "Alseyda",
             "description": "Певица и организатор музыкального фестиваля <a target='_blank' href='https://www.instagram.com/openmicmusicrussia/'>Open Mic Music Russia</a>",
             "text": "<p>Мы провели 8 фестивалей и не имели постоянного логотипа.</p><p>Спасибо, ребятам из MADE за крутое лого, с которым мы провели 9-й фестиваль!</p><p>Выходим на новый уровень!</p>"
@@ -38,7 +38,6 @@
     },
     {
         "id": "ingipro",
-        "disabled": true,
         "images": {
             "logo": "logo.png",
             "grayscale": "grayscale.png",
@@ -47,7 +46,8 @@
             "avatar": "avatar.png"
         },
         "title": "Логотип информационной системы <br/>для проектных институтов «Ингипро»",
-        "feedback": {
+        "feedback": false,
+        "feedback1": {
             "person": "Булат Мухсинов",
             "description": "Директор по продукту «<a target='_blank' href='https://ingipro.com'>Ингипро</a>»",
             "text": "<span style='font-size: 60px; font-family: Monaco, Arial, sans-serif;'>🔥Спасибо</span>"
