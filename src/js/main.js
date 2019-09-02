@@ -54,7 +54,7 @@ $(document).ready(() => {
         $(document).on('click', '.js-open-work', (evt) => {
             const $link = $(evt.currentTarget);
             const workId = $link.data('workId');
-            const work = activeWorks.find(work => work.id === workId);
+            const work = loadedWorks.find(work => work.id === workId);
 
             if (work) {
                 openWorkModal({
