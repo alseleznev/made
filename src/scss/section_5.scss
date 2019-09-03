@@ -27,5 +27,17 @@
         &__columns {
             margin-bottom: 30px;
         }
+
+        .columns__item {
+            margin-bottom: 40px;
+
+            br {
+                display: none;
+            }
+        }
+
+        .columns__item-title {
+            margin-bottom: 10px;
+        }
     }
 }
