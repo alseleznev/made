@@ -1,60 +1,5 @@
 [
     {
-        "id": "wall",
-        "images": {
-            "logo": "logo.png",
-            "large": "1_Wall.jpg",
-            "image": "2_Wall.jpg"
-        },
-        "title": "Логотип арт-проекта «Стена»",
-        "fullTitle": "Логотип арт-проекта «Стена»"
-    },
-    {
-        "id": "prsd",
-        "images": {
-            "logo": "logo.png",
-            "large": "1_PRSD.jpg",
-            "image": "2_PRSD.jpg"
-        },
-        "title": "Логотип Первого <br/>Специализированного Депозитария"
-    },
-    {
-        "id": "open_mic",
-        "images": {
-            "avatar": "avatar.png",
-            "logo": "logo.png",
-            "grayscale": "grayscale.png",
-            "large": "1_OpenMic.jpg",
-            "image": "2_OpenMic.jpg"
-        },
-        "title": "Логотип музыкального фестиваля <br/>Open Mic Music Russia",
-        "feedback": false,
-        "feedback1": {
-            "person": "Alseyda",
-            "description": "Певица и организатор музыкального фестиваля <a target='_blank' href='https://www.instagram.com/openmicmusicrussia/'>Open Mic Music Russia</a>",
-            "text": "<p>Мы провели 8 фестивалей и не имели постоянного логотипа.</p><p>Спасибо, ребятам из MADE за крутое лого, с которым мы провели 9-й фестиваль!</p><p>Выходим на новый уровень!</p>"
-        },
-        "feedbackOrder": 1
-    },
-    {
-        "id": "ingipro",
-        "images": {
-            "logo": "logo.png",
-            "grayscale": "grayscale.png",
-            "large": "1_Ingipro.jpg",
-            "image": "2_Ingipro.jpg",
-            "avatar": "avatar.png"
-        },
-        "title": "Логотип информационной системы <br/>для проектных институтов «Ингипро»",
-        "feedback": false,
-        "feedback1": {
-            "person": "Булат Мухсинов",
-            "description": "Директор по продукту «<a target='_blank' href='https://ingipro.com'>Ингипро</a>»",
-            "text": "<span style='font-size: 60px; font-family: Monaco, Arial, sans-serif;'>🔥Спасибо</span>"
-        },
-        "feedbackOrder": 2
-    },
-    {
         "id": "microsoft",
         "images": {
             "logo": "logo.png",
@@ -81,6 +26,70 @@
         "title": "Логотип разработчика <br/>информационных систем"
     },
     {
+        "id": "open_mic",
+        "images": {
+            "avatar": "avatar.png",
+            "logo": "logo.png",
+            "grayscale": "grayscale.png",
+            "large": "1_OpenMic.jpg",
+            "image": "2_OpenMic.jpg"
+        },
+        "title": "Логотип музыкального фестиваля <br/>Open Mic Music Russia",
+        "feedback": false,
+        "feedback1": {
+            "person": "Alseyda",
+            "description": "Певица и организатор музыкального фестиваля <a target='_blank' href='https://www.instagram.com/openmicmusicrussia/'>Open Mic Music Russia</a>",
+            "text": "<p>Мы провели 8 фестивалей и не имели постоянного логотипа.</p><p>Спасибо, ребятам из MADE за крутое лого, с которым мы провели 9-й фестиваль!</p><p>Выходим на новый уровень!</p>"
+        },
+        "feedbackOrder": 1
+    },
+    {
+        "id": "wall",
+        "images": {
+            "logo": "logo.png",
+            "large": "1_Wall.jpg",
+            "image": "2_Wall.jpg"
+        },
+        "title": "Логотип арт-проекта «Стена»",
+        "fullTitle": "Логотип арт-проекта «Стена»"
+    },
+    {
+        "id": "prsd",
+        "images": {
+            "logo": "logo.png",
+            "large": "1_PRSD.jpg",
+            "image": "2_PRSD.jpg"
+        },
+        "title": "Логотип Первого <br/>Специализированного Депозитария"
+    },
+    {
+        "id": "absoloni",
+        "images": {
+            "logo": "logo.png",
+            "large": "1_Absoloni.jpg",
+            "image": "2_Absoloni.jpg"
+        },
+        "title": "Логотип модельного агентства"
+    },
+    {
+        "id": "ingipro",
+        "images": {
+            "logo": "logo.png",
+            "grayscale": "grayscale.png",
+            "large": "1_Ingipro.jpg",
+            "image": "2_Ingipro.jpg",
+            "avatar": "avatar.png"
+        },
+        "title": "Логотип информационной системы <br/>для проектных институтов «Ингипро»",
+        "feedback": false,
+        "feedback1": {
+            "person": "Булат Мухсинов",
+            "description": "Директор по продукту «<a target='_blank' href='https://ingipro.com'>Ингипро</a>»",
+            "text": "<span style='font-size: 60px; font-family: Monaco, Arial, sans-serif;'>🔥Спасибо</span>"
+        },
+        "feedbackOrder": 2
+    },
+    {
         "id": "green_sms",
         "images": {
             "logo": "logo.png",
@@ -96,14 +105,5 @@
             "text": "<p>Мы долго жили с картинкой из интернета вместо логотипа.</p><p>Спасибо MADE, что сделали нам красивый логотип.</p>"
         },
         "feedbackOrder": 3
-    },
-    {
-        "id": "absoloni",
-        "images": {
-            "logo": "logo.png",
-            "large": "1_Absoloni.jpg",
-            "image": "2_Absoloni.jpg"
-        },
-        "title": "Логотип модельного агентства"
     }
 ]
