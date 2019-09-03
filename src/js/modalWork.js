@@ -13,18 +13,20 @@ class WorkModal extends Modal {
             name: 'work',
             render,
         });
+
+        this.carouselOptions = {
+            items: 1,
+            nav: false,
+            dots: true,
+            startPosition: data.index,
+        };
     }
 
     open() {
         super.open();
 
         this.$carousel = this.$modal.find('.js-carousel');
-        carousel(this.$carousel, {
-            items: 1,
-            nav: false,
-            dots: true,
-            startPosition: this.data.index,
-        });
+        carousel(this.$carousel, this.carouselOptions);
 
         this.$carousel.on('click', '.js-ctrl-next', () => this.$carousel.trigger('next.owl.carousel'));
         $(document).on('keydown.modalWork', (evt) => {
