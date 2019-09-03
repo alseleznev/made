@@ -27,5 +27,23 @@
         &__columns {
             margin-bottom: 30px;
         }
+
+        .columns__item {
+            margin-bottom: 40px;
+
+            br {
+                display: none;
+            }
+
+            /** email **/
+            a {
+                display: block;
+                margin-top: 10px;
+            }
+        }
+
+        .columns__item-title {
+            margin-bottom: 10px;
+        }
     }
 }
