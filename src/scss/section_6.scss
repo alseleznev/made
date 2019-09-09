@@ -128,7 +128,7 @@
 @media screen and (max-width: 440px) {
     .section_6 {
         &__carousel {
-            width: 350px;
+            width: calc(100vw - 32px * 2);
             margin: 0 auto;
         }
 
@@ -139,6 +139,11 @@
 
         &__feedback-logo {
             display: none;
+        }
+
+        &__feedback {
+            padding-right: 0;
+            padding-left: 0;
         }
     }
 }

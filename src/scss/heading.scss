@@ -54,8 +54,13 @@
 }
 
 @media screen and (max-width: 440px) {
+    .heading {
+        br {
+            display: none;
+        }
+    }
     .heading_2 {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .heading_3 {
