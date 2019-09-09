@@ -8,6 +8,8 @@
         border-bottom: 2px solid;
         resize: none;
         line-height: 1.4;
+        border-radius: 0;
+        padding: 0;
     }
 
     &__label {
@@ -34,6 +36,11 @@
         &__control {
             border-bottom-color: #ff7571;
             color: #fff;
+
+            &:focus {
+                color: #fff;
+                border-bottom-color: #fff;
+            }
         }
     }
 
@@ -45,6 +52,36 @@
 }
 
 .input.input_color_blue {
+    .input {
+        &__control {
+            border-bottom-color: #36a6fd;
+            color: #36a6fd;
+
+            &:focus {
+                color: #fff;
+                border-bottom-color: #fff;
+            }
+        }
+
+        &__label {
+            color: #9a9a9a;
+        }
+    }
+
+    &.invalid {
+        .input {
+            &__control {
+                border-bottom: solid 2px #ee5454;
+            }
+
+            &__label {
+                color: #ee5454;
+            }
+        }
+    }
+}
+
+.input.input_color_skyblue {
     .input {
         &__control {
             border-bottom-color: #36a6fd;

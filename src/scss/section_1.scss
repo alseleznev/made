@@ -91,6 +91,16 @@
 
 @media all and (max-width: 440px) {
     .section_1 {
+        .full-width {
+            display: block;
+            width: 100%;
+            text-align: center;
+
+            .input__control {
+                max-width: calc(100vw - 110px) !important;
+            }
+        }
+
         &__logo {
             margin-bottom: 60px;
         }
@@ -103,7 +113,7 @@
                     }
 
                     &[name="brand"] {
-                        max-width: 280px;
+                        max-width: none;
                     }
 
                     &[name="email"] {

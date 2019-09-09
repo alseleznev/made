@@ -15,6 +15,10 @@ export class Modal {
             .addClass('has-modal')
             .append(this.$modal);
 
+        $(document.body).on('touchend.no-scroll', (evt) => {
+            evt.preventDefault();
+        });
+
         this.$modal.on('click', '.js-close', (evt) => {
             evt.stopPropagation();
 
@@ -31,7 +35,9 @@ export class Modal {
     }
 
     close() {
-        $(document.body).removeClass('has-modal');
+        $(document.body)
+            .removeClass('has-modal')
+            .off('touchend.no-scroll');
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();
