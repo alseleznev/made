@@ -1,3 +1,7 @@
+import {
+    disableBodyScroll,
+    enableBodyScroll,
+} from 'body-scroll-lock';
 import loadTemplate from './template';
 
 export class Modal {
@@ -15,9 +19,7 @@ export class Modal {
             .addClass('has-modal')
             .append(this.$modal);
 
-        $(document.body).on('touchend.no-scroll', (evt) => {
-            evt.preventDefault();
-        });
+        disableBodyScroll(this.$modal);
 
         this.$modal.on('click', '.js-close', (evt) => {
             evt.stopPropagation();
@@ -35,9 +37,9 @@ export class Modal {
     }
 
     close() {
-        $(document.body)
-            .removeClass('has-modal')
-            .off('touchend.no-scroll');
+        $(document.body).removeClass('has-modal');
+
+        enableBodyScroll(this.$modal);
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();
