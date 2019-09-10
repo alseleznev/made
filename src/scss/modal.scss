@@ -1,6 +1,5 @@
 body.has-modal {
     overflow: hidden;
-    position: fixed;
 
     .owl-prev,
     .owl-next {
@@ -78,8 +77,14 @@ body.has-modal {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1024px) {
+    body.has-modal {
+        position: fixed;
+    }
+
     .modal {
+        background-color: #808080;
+
         &__inner {
             border-radius: 0;
             min-width: auto;
