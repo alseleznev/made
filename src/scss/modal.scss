@@ -77,8 +77,8 @@ body.has-modal {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    body.has-modal {
+body.has-touch {
+    &.has-modal {
         position: fixed;
     }
 
