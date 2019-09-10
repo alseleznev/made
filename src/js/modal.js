@@ -8,18 +8,18 @@ export class Modal {
     constructor(data) {
         this.data = data;
         this.id = Date.now();
+        this.scrollTop = $(window).scrollTop();
     }
 
     open() {
         const template = loadTemplate('modal');
         const render = template(this.data);
         this.$modal = $(render);
+        this.scrollTop = $(window).scrollTop();
 
         $(document.body)
             .addClass('has-modal')
             .append(this.$modal);
-
-        disableBodyScroll(this.$modal);
 
         this.$modal.on('click', '.js-close', (evt) => {
             evt.stopPropagation();
@@ -38,8 +38,7 @@ export class Modal {
 
     close() {
         $(document.body).removeClass('has-modal');
-
-        enableBodyScroll(this.$modal);
+        window.scrollTo(0, this.scrollTop);
 
         $(document).off(`keydown.${this.id}`);
         this.$modal.remove();
