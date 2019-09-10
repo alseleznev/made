@@ -1,7 +1,3 @@
-import {
-    disableBodyScroll,
-    enableBodyScroll,
-} from 'body-scroll-lock';
 import loadTemplate from './template';
 
 export class Modal {
